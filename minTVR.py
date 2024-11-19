@@ -148,6 +148,8 @@ if __name__ == "__main__":
     # Output
     tours = DVRP_on_tree(edges, root_id=root_id, D=D)
     if tours is not None:
-        for i, tour in enumerate(tours):
-            tour_str = '->'.join(map(str, tour))
-            print(f"Tour {i+1}: {tour_str}")
+        print(f"Number of Paths: {len(tours)}")
+        # uncomment it for path detail output 
+        # for i, tour in enumerate(tours):
+        #     tour_str = '->'.join(map(str, tour))
+        #     print(f"Tour {i+1}: {tour_str}")
