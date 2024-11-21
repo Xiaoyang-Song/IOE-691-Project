@@ -1,3 +1,8 @@
+# IOE 691 Project
+# Binary Tree Generator
+# Generate Binary Tree as .txt format
+# @ Author: Kuo Wang kuowang@umich.edu
+
 import random
 import argparse
 
