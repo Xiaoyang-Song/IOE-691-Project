@@ -1,7 +1,7 @@
 # IOE 691 Project
 # Integer programming for DVRP on tree metrics
-# Implemented via Gurobi
-# @ Author: Guixian Chen, gxchen@umich.edu
+# Implemented by Gurobi
+# @Author: Guixian Chen, gxchen@umich.edu
 #
 from minTVR import *
 from gurobipy import Model, GRB
@@ -65,7 +65,7 @@ def generate_subtrees_with_root(nodes, D):
 def IP_DVRP(nodes, D):
     # Generate all subtrees with root
     subtrees_with_root = generate_subtrees_with_root(nodes, D)
-    
+
     # For each node, find all subtrees that cover it
     nodes_cover = {key: [] for key in nodes}
     n = len(subtrees_with_root)  # number of subtrees (variables)
