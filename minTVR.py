@@ -15,6 +15,7 @@ class TreeNode:
         self.subtree_size = 0  # total weight of subtree edges
         self.L = 0  # minimal tour length covering subtree rooted at this node
         self.depth = 0  # distance from root to this node
+        self.level = 0  # level of this node (root has level 0)
 
 def build_tree(edges, root_id):
     # Build adjacency list
@@ -34,18 +35,19 @@ def build_tree(edges, root_id):
 
     # Build the tree using DFS
     visited = set()
-    def dfs(u, parent, depth):
+    def dfs(u, parent, depth, level):
         visited.add(u)
         node_u = nodes[u]
         node_u.parent = nodes[parent] if parent is not None else None
         node_u.depth = depth
+        node_u.level = level
         for v, w in adj[u]:
             if v not in visited:
                 node_v = nodes[v]
                 node_v.edge_weight = w
                 node_u.children.append((node_v, w))
-                dfs(v, u, depth + w)
-    dfs(root_id, None, 0)
+                dfs(v, u, depth + w, level+1)
+    dfs(root_id, None, 0, 0)
     root = nodes[root_id]
     return nodes, root
 
