@@ -5,6 +5,7 @@
 #
 from minTVR import *
 from gurobipy import Model, GRB
+from tqdm import tqdm
 
 
 # Generate all subtrees containing root
@@ -31,7 +32,7 @@ def generate_subtrees_with_root(nodes, D):
     # BFS: generate all subtrees containing root
     # Initialize with empty subtree containing only root
     subtrees_with_root = [([1], 0, [1])]
-    for level in range(1, tree_max_level+1):
+    for level in tqdm(range(1, tree_max_level+1)):
         for node_id in nodes_level[level]:
             node = nodes[node_id]
             node_parent = node.parent.id
@@ -90,6 +91,7 @@ def IP_DVRP(nodes, D):
     model.setObjective(sum(random_vars[i] for i in range(n)), GRB.MINIMIZE)
     
     # Optimize
+    print("Start optimizing IP...")
     model.optimize()
 
     # Output

@@ -2,7 +2,7 @@
 # DVRP on tree metrics Algorithm Implementation
 # Viswanath Nagarajan, R. Ravi: 
 # Approximation algorithms for distance constrained vehicle routing problems Section2
-
+import sys
 class TreeNode:
     """
     Node class
@@ -110,15 +110,15 @@ def DVRP_on_tree(edges, root_id, D):
         return None
     return tours
 
-if __name__ == "__main__":
-    import sys
+
+def read_files(sys):
     # Check if the user has provided the input file
     if len(sys.argv) < 2:
         print("Usage: python script_name.py edges_file.txt")
         sys.exit(1)
+
     edges_file = sys.argv[1]
     root_id = 1  # Default root node ID
-
     edges = []
     
     # input
@@ -146,6 +146,11 @@ if __name__ == "__main__":
     except FileNotFoundError:
         print(f"File not found: {edges_file}")
         sys.exit(1)
+    return edges, root_id, D
+
+if __name__ == "__main__":
+    # Input handling
+    edges, root_id, D = read_files(sys)
 
     # Output
     tours = DVRP_on_tree(edges, root_id=root_id, D=D)
