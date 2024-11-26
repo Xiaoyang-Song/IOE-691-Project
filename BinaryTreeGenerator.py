@@ -5,6 +5,7 @@
 
 import random
 import argparse
+import os
 
 def generate_balanced_binary_tree(n, min_weight, max_weight):
     edges = []
@@ -91,7 +92,7 @@ def main():
                         help='Number of nodes on the left of the root (excluding root). Applicable only if unbalanced.')
     parser.add_argument('--min', type=int, required=True, help='Minimum edge weight.')
     parser.add_argument('--max', type=int, required=True, help='Maximum edge weight.')
-    parser.add_argument('-o', '--output', type=str, default='source/binary_tree.txt', help='Output file name.')
+    parser.add_argument('-o', '--output', type=str, default='binary_tree.txt', help='Output file name.')
    
     args = parser.parse_args()
 
@@ -99,7 +100,7 @@ def main():
     D = args.distance
     min_weight = args.min
     max_weight = args.max
-    output_file = args.output
+    output_file = os.path.join('source', args.output)
 
     if args.balanced:
         edges = generate_balanced_binary_tree(n, min_weight, max_weight)
