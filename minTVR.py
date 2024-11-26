@@ -2,7 +2,7 @@
 # DVRP on tree metrics Algorithm Implementation
 # Viswanath Nagarajan, R. Ravi: 
 # Approximation algorithms for distance constrained vehicle routing problems Section2
-import sys
+
 class TreeNode:
     """
     Node class

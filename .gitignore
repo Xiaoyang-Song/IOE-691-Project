@@ -3,5 +3,7 @@
 # customized
 __pycache__
 
+/env
+/.vscode
 /xysong
 *.png
