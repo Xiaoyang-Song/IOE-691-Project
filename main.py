@@ -9,7 +9,8 @@ import time
 if __name__ == '__main__':
     # print("Driver")
     print("Instance: ",  " ".join(sys.argv))
-    edges, root_id, D = read_files(sys)
+    edges, root_id = read_files(sys)
+    D = int(sys.argv[2])
     # Output
     sol_minTVR_s=time.time()
     tours = DVRP_on_tree(edges, root_id=root_id, D=D)
@@ -33,3 +34,4 @@ if __name__ == '__main__':
     print(f"-- Build Instance: {build_time:.4}")
     print(f"-- Solve: {sol_time:.4}")
     print(f"minTVR runtime: {sol_minTVR_e - sol_minTVR_s:.4}")
+    

@@ -42,7 +42,7 @@ minTVR: 3
 IP: 3
 Ratio: 1.0
 --------------------------------------------------------------------------------
-IP runtime: 0.07341
--- Build Instance: 0.03274
--- Solve: 0.04066
-minTVR runtime: 0.0001853
+IP runtime: 0.07519
+-- Build Instance: 0.03243
+-- Solve: 0.04276
+minTVR runtime: 0.0001831

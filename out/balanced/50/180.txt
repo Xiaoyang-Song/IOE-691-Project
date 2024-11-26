@@ -1,4 +1,4 @@
-Instance:  main.py source/balanced/50.txt 220
+Instance:  main.py source/balanced/50.txt 180
 Number of Paths: 4
 Set parameter Username
 Academic license - for non-commercial use only - expires 2025-11-25
@@ -7,40 +7,40 @@ Gurobi Optimizer version 10.0.2 build v10.0.2rc0 (mac64[x86])
 CPU model: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
 Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
 
-Optimize a model with 20 rows, 328 columns and 2635 nonzeros
-Model fingerprint: 0x6e3d4944
-Variable types: 0 continuous, 328 integer (0 binary)
+Optimize a model with 20 rows, 137 columns and 932 nonzeros
+Model fingerprint: 0x0ac2b1c6
+Variable types: 0 continuous, 137 integer (0 binary)
 Coefficient statistics:
   Matrix range     [1e+00, 1e+00]
   Objective range  [1e+00, 1e+00]
   Bounds range     [1e+00, 1e+00]
   RHS range        [1e+00, 1e+00]
-Found heuristic solution: objective 6.0000000
-Presolve removed 10 rows and 292 columns
+Found heuristic solution: objective 5.0000000
+Presolve removed 14 rows and 127 columns
 Presolve time: 0.00s
-Presolved: 10 rows, 36 columns, 99 nonzeros
-Variable types: 0 continuous, 36 integer (36 binary)
+Presolved: 6 rows, 10 columns, 20 nonzeros
+Variable types: 0 continuous, 10 integer (10 binary)
 
-Root relaxation: objective 3.000000e+00, 12 iterations, 0.00 seconds (0.00 work units)
+Root relaxation: objective 4.000000e+00, 6 iterations, 0.00 seconds (0.00 work units)
 
     Nodes    |    Current Node    |     Objective Bounds      |     Work
  Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
 
-*    0     0               0       3.0000000    3.00000  0.00%     -    0s
+*    0     0               0       4.0000000    4.00000  0.00%     -    0s
 
-Explored 1 nodes (12 simplex iterations) in 0.01 seconds (0.00 work units)
+Explored 1 nodes (6 simplex iterations) in 0.00 seconds (0.00 work units)
 Thread count was 8 (of 8 available processors)
 
-Solution count 2: 3 6 
+Solution count 2: 4 5 
 
 Optimal solution found (tolerance 1.00e-04)
-Best objective 3.000000000000e+00, best bound 3.000000000000e+00, gap 0.0000%
+Best objective 4.000000000000e+00, best bound 4.000000000000e+00, gap 0.0000%
 --------------------------------------------------------------------------------
 minTVR: 4
-IP: 3
-Ratio: 1.333
+IP: 4
+Ratio: 1.0
 --------------------------------------------------------------------------------
-IP runtime: 0.05273
--- Build Instance: 0.02963
--- Solve: 0.0231
-minTVR runtime: 0.000175
+IP runtime: 0.04157
+-- Build Instance: 0.02671
+-- Solve: 0.01486
+minTVR runtime: 0.0001609

@@ -117,7 +117,7 @@ def read_files(sys):
         print("Usage: python script_name.py edges_file.txt")
         sys.exit(1)
 
-    edges_file, D = sys.argv[1], int(sys.argv[2])
+    edges_file = sys.argv[1]
     root_id = 1  # Default root node ID
     edges = []
     
@@ -146,12 +146,13 @@ def read_files(sys):
     except FileNotFoundError:
         print(f"File not found: {edges_file}")
         sys.exit(1)
-    return edges, root_id, D
+    return edges, root_id
 
 if __name__ == "__main__":
     # Input handling
     import sys
-    edges, root_id, D = read_files(sys)
+    edges, root_id = read_files(sys)
+    D = int(sys.argv[2])
 
     # Output
     tours = DVRP_on_tree(edges, root_id=root_id, D=D)
