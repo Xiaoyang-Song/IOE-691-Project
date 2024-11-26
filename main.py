@@ -18,7 +18,6 @@ if __name__ == '__main__':
         print(f"Number of Paths: {len(tours)}")
 
     # IP
-    # TODO: resolve bugs in generate subtree function in IP
     nodes, root = build_tree(edges, root_id)
     opt, build_time, sol_time = IP_DVRP(nodes, D)
 

@@ -84,7 +84,7 @@ def IP_DVRP(nodes, D):
     sol_IP_s = time.time()
     # Create a model
     model = Model("IP for DVRP")
-    model.setParam('OutputFlag', 0)
+    # model.setParam('OutputFlag', 0)
     # Add variables
     random_vars = {}
     for i in range(n):

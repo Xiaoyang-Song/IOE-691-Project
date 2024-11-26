@@ -1,0 +1,58 @@
+Instance:  main.py source/balanced/50.txt 220
+Number of Paths: 6
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-11-25
+Gurobi Optimizer version 10.0.2 build v10.0.2rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 50 rows, 127194 columns and 1905422 nonzeros
+Model fingerprint: 0xe415147e
+Variable types: 0 continuous, 127194 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 15.0000000
+Presolve removed 3 rows and 520 columns
+Presolve time: 2.19s
+Presolved: 47 rows, 126674 columns, 1519396 nonzeros
+Variable types: 0 continuous, 126674 integer (126674 binary)
+
+Starting sifting (using dual simplex for sub-problems)...
+
+    Iter     Pivots    Primal Obj      Dual Obj        Time
+       0          0     infinity      0.0000000e+00      3s
+       1        109   2.5000000e+01   4.1666667e+00      3s
+
+Sifting complete
+
+
+Root relaxation: objective 4.166667e+00, 143 iterations, 0.11 seconds (0.08 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    4.16667    0    7   15.00000    4.16667  72.2%     -    2s
+H    0     0                      10.0000000    4.16667  58.3%     -    2s
+H    0     0                       5.0000000    4.16667  16.7%     -    2s
+     0     0    4.16667    0    7    5.00000    4.16667  16.7%     -    2s
+
+Explored 1 nodes (230 simplex iterations) in 2.90 seconds (3.39 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 3: 5 10 15 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.000000000000e+00, best bound 5.000000000000e+00, gap 0.0000%
+--------------------------------------------------------------------------------
+minTVR: 6
+IP: 5
+Ratio: 1.2
+--------------------------------------------------------------------------------
+IP runtime: 12.4
+-- Build Instance: 1.5
+-- Solve: 10.9
+minTVR runtime: 0.0001621
