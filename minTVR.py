@@ -117,7 +117,7 @@ def read_files(sys):
         print("Usage: python script_name.py edges_file.txt")
         sys.exit(1)
 
-    edges_file = sys.argv[1]
+    edges_file, D = sys.argv[1], int(sys.argv[2])
     root_id = 1  # Default root node ID
     edges = []
     
@@ -128,12 +128,12 @@ def read_files(sys):
             if not lines:
                 print("Input file is empty.")
                 sys.exit(1)
-            D_line = lines[0].strip()
-            if not D_line:
-                print("The first line of the file must be the distance constraint D.")
-                sys.exit(1)
-            D = int(D_line)
-            for line in lines[1:]:
+            # D_line = lines[0].strip()
+            # if not D_line:
+            #     print("The first line of the file must be the distance constraint D.")
+            #     sys.exit(1)
+            # D = int(D_line)
+            for line in lines[0:]:
                 line = line.strip()
                 if not line or line.startswith('#'):
                     continue  # Skip empty lines and comments
@@ -150,6 +150,7 @@ def read_files(sys):
 
 if __name__ == "__main__":
     # Input handling
+    import sys
     edges, root_id, D = read_files(sys)
 
     # Output

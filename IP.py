@@ -6,6 +6,7 @@
 from minTVR import *
 from gurobipy import Model, GRB
 from tqdm import tqdm
+import time
 
 
 # Generate all subtrees containing root
@@ -64,6 +65,7 @@ def generate_subtrees_with_root(nodes, D):
 # sol_set: selected subtrees of optimal solution
 #
 def IP_DVRP(nodes, D):
+    build_IP_s =time.time()
     # Generate all subtrees with root
     subtrees_with_root = generate_subtrees_with_root(nodes, D)
 
@@ -75,9 +77,14 @@ def IP_DVRP(nodes, D):
         subtree_nodes = subtree[0]
         for node in subtree_nodes:
             nodes_cover[node].append(i)
-    
+    build_IP_e =time.time()
+    build_time = build_IP_e -build_IP_s
+
+
+    sol_IP_s = time.time()
     # Create a model
     model = Model("IP for DVRP")
+    model.setParam('OutputFlag', 0)
     # Add variables
     random_vars = {}
     for i in range(n):
@@ -91,7 +98,7 @@ def IP_DVRP(nodes, D):
     model.setObjective(sum(random_vars[i] for i in range(n)), GRB.MINIMIZE)
     
     # Optimize
-    print("Start optimizing IP...")
+    # print("Start optimizing IP...")
     model.optimize()
 
     # Output
@@ -99,6 +106,7 @@ def IP_DVRP(nodes, D):
     for i in range(n):
         if random_vars[i].X == 1:
             sol_set.append(subtrees_with_root[i])
-    
-    return sol_set
+    sol_IP_e = time.time()
+    sol_time = sol_IP_e - sol_IP_s
+    return sol_set, build_time, sol_time
     

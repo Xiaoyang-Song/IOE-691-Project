@@ -76,9 +76,9 @@ def build_subtree(parent_id, num_nodes, node_id_start, min_weight, max_weight):
                 break
     return edges
 
-def write_edges_to_file(edges, filename, D):
+def write_edges_to_file(edges, filename):
     with open(filename, 'w') as f:
-        f.write(f"{D}\n")
+        # f.write(f"{D}\n")
         f.write("# Edges (u,v,w)\n")
         for u, v, w in edges:
             f.write(f"{u} {v} {w}\n")
@@ -86,7 +86,7 @@ def write_edges_to_file(edges, filename, D):
 def main():
     parser = argparse.ArgumentParser(description='Generate a random binary tree and save it to a file.')
     parser.add_argument('-n', '--nodes', type=int, required=True, help='Number of nodes in the tree.')
-    parser.add_argument('-D', '--distance', type=int, required=True, help='Distance constraints for the first line')
+    # parser.add_argument('-D', '--distance', type=int, required=True, help='Distance constraints for the first line')
     parser.add_argument('-b', '--balanced', action='store_true', help='Generate a balanced tree.')
     parser.add_argument('-L', '--left_nodes', type=int, default=0,
                         help='Number of nodes on the left of the root (excluding root). Applicable only if unbalanced.')
@@ -97,7 +97,7 @@ def main():
     args = parser.parse_args()
 
     n = args.nodes
-    D = args.distance
+    # D = args.distance
     min_weight = args.min
     max_weight = args.max
     output_file = os.path.join('source', args.output)
@@ -108,7 +108,7 @@ def main():
         L = args.left_nodes
         edges = generate_unbalanced_binary_tree(n, L, min_weight, max_weight)
 
-    write_edges_to_file(edges, output_file, D)
+    write_edges_to_file(edges, output_file)
     print(f"Binary tree has been generated and saved to '{output_file}'.")
 
 if __name__ == "__main__":
