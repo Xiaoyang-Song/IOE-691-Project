@@ -1,0 +1,59 @@
+Instance:  main.py source/balanced/100.txt 200
+Number of Paths: 13
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-11-25
+Gurobi Optimizer version 10.0.2 build v10.0.2rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 100 rows, 166033 columns and 2346647 nonzeros
+Model fingerprint: 0xefe34d59
+Variable types: 0 continuous, 166033 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 37.0000000
+Presolve removed 3 rows and 1925 columns
+Presolve time: 2.47s
+Presolved: 97 rows, 164108 columns, 1835240 nonzeros
+Variable types: 0 continuous, 164108 integer (164108 binary)
+
+Starting sifting (using dual simplex for sub-problems)...
+
+    Iter     Pivots    Primal Obj      Dual Obj        Time
+       0          0     infinity      0.0000000e+00      3s
+       1        154   5.0000000e+01   8.3333333e+00      3s
+       2        238   1.8160714e+01   9.3160714e+00      3s
+
+Sifting complete
+
+
+Root relaxation: objective 1.150000e+01, 303 iterations, 0.13 seconds (0.12 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   11.50000    0    3   37.00000   11.50000  68.9%     -    3s
+H    0     0                      16.0000000   11.50000  28.1%     -    3s
+H    0     0                      12.0000000   11.50000  4.17%     -    3s
+     0     0   11.50000    0    3   12.00000   11.50000  4.17%     -    3s
+
+Explored 1 nodes (468 simplex iterations) in 3.22 seconds (4.42 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 3: 12 16 37 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.200000000000e+01, best bound 1.200000000000e+01, gap 0.0000%
+--------------------------------------------------------------------------------
+minTVR: 13
+IP: 12
+Ratio: 1.083
+--------------------------------------------------------------------------------
+IP runtime: 15.97
+-- Build Instance: 3.433
+-- Solve: 12.54
+minTVR runtime: 0.0003667

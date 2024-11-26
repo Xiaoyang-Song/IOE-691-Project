@@ -54,3 +54,12 @@ Solution count 3: 4 5 19
 
 Optimal solution found (tolerance 1.00e-04)
 Best objective 4.000000000000e+00, best bound 4.000000000000e+00, gap 0.0000%
+--------------------------------------------------------------------------------
+minTVR: 6
+IP: 4
+Ratio: 1.5
+--------------------------------------------------------------------------------
+IP runtime: 32.36
+-- Build Instance: 3.893
+-- Solve: 28.46
+minTVR runtime: 0.000185
