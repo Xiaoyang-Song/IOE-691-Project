@@ -19,6 +19,6 @@ mkdir -p "source/balanced/$n"
 mkdir -p "source/imbalanced/$n"
 for i in {1..100}
 do
-    python BinaryTreeGenerator.py -n "$n" --min 0 --max 1 -o "$out/$i.txt" -b
-    python BinaryTreeGenerator.py -n "$n" --min 0 --max 1 -o "$outi/$i.txt"
+    python BinaryTreeGenerator.py -n "$n" --min 1 --max 10 -o "$out/$i.txt" -b
+    python BinaryTreeGenerator.py -n "$n" --min 1 --max 10 -o "$outi/$i.txt"
 done

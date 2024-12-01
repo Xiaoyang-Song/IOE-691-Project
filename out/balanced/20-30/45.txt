@@ -1,0 +1,39 @@
+Instance:  main.py source/balanced/20/45.txt 30
+Number of Paths: 7
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-11-25
+Gurobi Optimizer version 10.0.2 build v10.0.2rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 20 rows, 80 columns and 495 nonzeros
+Model fingerprint: 0x2fc5bce7
+Variable types: 0 continuous, 80 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 7.0000000
+Presolve removed 20 rows and 80 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 2: 6 7 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.000000000000e+00, best bound 6.000000000000e+00, gap 0.0000%
+--------------------------------------------------------------------------------
+minTVR: 7
+IP: 6
+Ratio: 1.167
+--------------------------------------------------------------------------------
+IP runtime: 0.03751
+-- Build Instance: 0.02863
+-- Solve: 0.008873
+minTVR runtime: 0.00018
+7 6 1.167 0.02863 0.008873 0.03751 0.00018

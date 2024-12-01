@@ -29,10 +29,9 @@ n=args.n
 m=args.m
 
 summary = []
-
+eff = 0
 for i in range(m):
     file_path = os.path.join('out', mode, f'{n}-{D}', f"{i+1}.txt")
-
     results = read_results(file_path, 1)[0].rstrip("\n").split(" ")
     if results[0] != 'Terminated':
         results = np.array(results, dtype=np.float32)
@@ -40,6 +39,7 @@ for i in range(m):
         # if ratio==2:
         #     print(i)
         summary.append(results)
+        eff += 1
 
 summary = np.array(summary)
 print(summary)
@@ -61,3 +61,4 @@ plt.title(f'Results on randomized instance (n={n} & D={D})')
 plt.legend()
 fname = os.path.join('figure', f"{mode}-{n}-{D}.png")
 plt.savefig(fname)
+print(f"Effective size: {eff}.")
