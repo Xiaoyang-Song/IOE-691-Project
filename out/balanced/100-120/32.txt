@@ -18,3 +18,55 @@ Coefficient statistics:
   RHS range        [1e+00, 1e+00]
 Found heuristic solution: objective 35.0000000
 Presolve removed 5 rows and 15035 columns (presolve time = 5s)...
+Presolve removed 5 rows and 15035 columns
+Presolve time: 6.40s
+Presolved: 95 rows, 86974 columns, 892383 nonzeros
+Variable types: 0 continuous, 86974 integer (86974 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   9.500000e+01   0.000000e+00      7s
+
+Starting sifting (using dual simplex for sub-problems)...
+
+    Iter     Pivots    Primal Obj      Dual Obj        Time
+       0          0     infinity      0.0000000e+00      7s
+       1        127   5.0000000e+01   8.3333333e+00      7s
+       2        215   2.8000000e+01   1.0300000e+01      7s
+       3        291   1.4833333e+01   1.1811111e+01      7s
+       4        359   1.3625000e+01   1.2595495e+01      7s
+       5        422   1.3500000e+01   1.3500000e+01      7s
+
+Sifting complete
+
+     422    1.3500000e+01   0.000000e+00   0.000000e+00      7s
+
+Root relaxation: objective 1.350000e+01, 422 iterations, 0.28 seconds (0.08 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   13.50000    0   12   35.00000   13.50000  61.4%     -    7s
+H    0     0                      31.0000000   13.50000  56.5%     -    8s
+H    0     0                      15.0000000   13.50000  10.0%     -    9s
+H    0     0                      14.0000000   13.50000  3.57%     -   14s
+     0     0   13.50000    0   12   14.00000   13.50000  3.57%     -   14s
+
+Explored 1 nodes (469 simplex iterations) in 15.38 seconds (4.07 work units)
+Thread count was 32 (of 72 available processors)
+
+Solution count 4: 14 15 31 35 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.400000000000e+01, best bound 1.400000000000e+01, gap 0.0000%
+--------------------------------------------------------------------------------
+minTVR: 17
+IP: 14
+Ratio: 1.214
+--------------------------------------------------------------------------------
+IP runtime: 34.41
+-- Build Instance: 4.929
+-- Solve: 29.49
+minTVR runtime: 0.0006428
+17 14 1.214 4.929 29.49 34.41 0.0006428
