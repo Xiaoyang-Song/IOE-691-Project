@@ -1,0 +1,77 @@
+Instance:  main.py source/balanced/200/6.txt 120
+Number of Paths: 38
+Set parameter Username
+Set parameter LicenseID to value 2593664
+Academic license - for non-commercial use only - expires 2025-12-01
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Red Hat Enterprise Linux 8.8 (Ootpa)")
+
+CPU model: Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 36 physical cores, 72 logical processors, using up to 32 threads
+
+Optimize a model with 200 rows, 166395 columns and 2229473 nonzeros
+Model fingerprint: 0xac0f547a
+Variable types: 0 continuous, 166395 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 66.0000000
+Presolve removed 15 rows and 22726 columns (presolve time = 5s)...
+Presolve removed 15 rows and 22958 columns
+Presolve time: 5.86s
+Presolved: 185 rows, 143437 columns, 1551202 nonzeros
+Found heuristic solution: objective 65.0000000
+Variable types: 0 continuous, 143437 integer (143437 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.850000e+02   0.000000e+00      6s
+
+Starting sifting (using dual simplex for sub-problems)...
+
+    Iter     Pivots    Primal Obj      Dual Obj        Time
+       0          0     infinity      0.0000000e+00      6s
+       1        248   1.0000000e+02   2.5000000e+01      6s
+       2        363   5.1250000e+01   2.7916667e+01      6s
+       3        452   3.5883333e+01   2.9908333e+01      6s
+       4        529   3.1916667e+01   3.1916667e+01      6s
+
+Sifting complete
+
+     529    3.1916667e+01   0.000000e+00   0.000000e+00      6s
+
+Root relaxation: objective 3.191667e+01, 529 iterations, 0.15 seconds (0.12 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   31.91667    0   37   65.00000   31.91667  50.9%     -    6s
+H    0     0                      36.0000000   31.91667  11.3%     -    6s
+     0     0   33.06667    0   45   36.00000   33.06667  8.15%     -   16s
+H    0     0                      35.0000000   33.06667  5.52%     -   25s
+H    0     0                      34.0000000   33.06667  2.75%     -   28s
+     0     0   33.06667    0   45   34.00000   33.06667  2.75%     -   28s
+
+Cutting planes:
+  MIR: 5
+  Zero half: 10
+
+Explored 1 nodes (725 simplex iterations) in 28.86 seconds (9.43 work units)
+Thread count was 32 (of 72 available processors)
+
+Solution count 5: 34 35 36 ... 66
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.400000000000e+01, best bound 3.400000000000e+01, gap 0.0000%
+--------------------------------------------------------------------------------
+minTVR: 38
+IP: 34
+Ratio: 1.118
+--------------------------------------------------------------------------------
+IP runtime: 77.51
+-- Build Instance: 34.32
+-- Solve: 43.19
+minTVR runtime: 0.001392
+38 34 1.118 34.32 43.19 77.51 0.001392

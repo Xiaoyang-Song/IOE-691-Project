@@ -18,3 +18,68 @@ Coefficient statistics:
   RHS range        [1e+00, 1e+00]
 Found heuristic solution: objective 63.0000000
 Presolve removed 30 rows and 31416 columns (presolve time = 5s)...
+Presolve removed 36 rows and 32046 columns
+Presolve time: 8.05s
+Presolved: 164 rows, 150814 columns, 1729857 nonzeros
+Variable types: 0 continuous, 150814 integer (150814 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.640000e+02   0.000000e+00      9s
+
+Starting sifting (using dual simplex for sub-problems)...
+
+    Iter     Pivots    Primal Obj      Dual Obj        Time
+       0          0     infinity      0.0000000e+00      9s
+       1        215   1.0000000e+02   1.6666667e+01      9s
+       2        359   5.7047216e+01   2.4195244e+01      9s
+       3        496   3.9690073e+01   2.8262637e+01      9s
+       4        625   3.1522811e+01   3.0113006e+01      9s
+
+Sifting complete
+
+     722    3.1356144e+01   0.000000e+00   0.000000e+00      9s
+
+Root relaxation: objective 3.135614e+01, 722 iterations, 0.24 seconds (0.13 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   31.35614    0   53   63.00000   31.35614  50.2%     -    8s
+H    0     0                      35.0000000   31.35614  10.4%     -    9s
+H    0     0                      34.0000000   31.35614  7.78%     -   10s
+     0     0   32.57360    0   42   34.00000   32.57360  4.20%     -   11s
+     0     0   32.57360    0   42   34.00000   32.57360  4.20%     -   11s
+     0     0   32.57360    0   42   34.00000   32.57360  4.20%     -   11s
+     0     0   32.92521    0   35   34.00000   32.92521  3.16%     -   11s
+     0     0   32.94188    0   43   34.00000   32.94188  3.11%     -   11s
+     0     0   32.94188    0   33   34.00000   32.94188  3.11%     -   12s
+     0     0   32.94188    0   33   34.00000   32.94188  3.11%     -   12s
+     0     0   32.94188    0   33   34.00000   32.94188  3.11%     -   12s
+     0     0   32.94188    0   33   34.00000   32.94188  3.11%     -   12s
+     0     0   32.94188    0   33   34.00000   32.94188  3.11%     -   12s
+     0     0   32.94188    0   33   34.00000   32.94188  3.11%     -   12s
+     0     0     cutoff    0        34.00000   34.00000  0.00%     -   12s
+
+Cutting planes:
+  MIR: 8
+  Zero half: 7
+
+Explored 1 nodes (855 simplex iterations) in 12.66 seconds (11.38 work units)
+Thread count was 32 (of 72 available processors)
+
+Solution count 3: 34 35 63 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.400000000000e+01, best bound 3.400000000000e+01, gap 0.0000%
+--------------------------------------------------------------------------------
+minTVR: 37
+IP: 34
+Ratio: 1.088
+--------------------------------------------------------------------------------
+IP runtime: 53.86
+-- Build Instance: 25.66
+-- Solve: 28.2
+minTVR runtime: 0.00156
+37 34 1.088 25.66 28.2 53.86 0.00156

@@ -17,3 +17,60 @@ Coefficient statistics:
   Bounds range     [1e+00, 1e+00]
   RHS range        [1e+00, 1e+00]
 Found heuristic solution: objective 37.0000000
+Presolve removed 6 rows and 14067 columns (presolve time = 5s)...
+Presolve removed 6 rows and 14121 columns
+Presolve time: 7.38s
+Presolved: 94 rows, 189650 columns, 2143191 nonzeros
+Variable types: 0 continuous, 189650 integer (189650 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   9.400000e+01   0.000000e+00      8s
+
+Starting sifting (using dual simplex for sub-problems)...
+
+    Iter     Pivots    Primal Obj      Dual Obj        Time
+       0          0     infinity      0.0000000e+00      8s
+       1        161   5.0000000e+01   1.0000000e+01      8s
+       2        230   1.8100000e+01   1.1567742e+01      8s
+       3        287   1.4722222e+01   1.2277500e+01      8s
+       4        336   1.3750000e+01   1.3750000e+01      8s
+
+Sifting complete
+
+     336    1.3750000e+01   0.000000e+00   0.000000e+00      8s
+
+Root relaxation: objective 1.375000e+01, 336 iterations, 0.30 seconds (0.16 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   13.75000    0   28   37.00000   13.75000  62.8%     -    8s
+H    0     0                      17.0000000   13.75000  19.1%     -    8s
+H    0     0                      16.0000000   13.75000  14.1%     -    9s
+     0     0   13.95000    0   35   16.00000   13.95000  12.8%     -   10s
+H    0     0                      15.0000000   13.95000  7.00%     -   12s
+     0     0 infeasible    0        15.00000   15.00000  0.00%     -   12s
+
+Cutting planes:
+  MIR: 1
+  Zero half: 4
+
+Explored 1 nodes (419 simplex iterations) in 12.87 seconds (11.11 work units)
+Thread count was 32 (of 72 available processors)
+
+Solution count 4: 15 16 17 37 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.500000000000e+01, best bound 1.500000000000e+01, gap 0.0000%
+--------------------------------------------------------------------------------
+minTVR: 18
+IP: 15
+Ratio: 1.2
+--------------------------------------------------------------------------------
+IP runtime: 39.92
+-- Build Instance: 9.135
+-- Solve: 30.79
+minTVR runtime: 0.0006087
+18 15 1.2 9.135 30.79 39.92 0.0006087

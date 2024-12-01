@@ -1,0 +1,73 @@
+Instance:  main.py source/balanced/200/8.txt 120
+Number of Paths: 37
+Set parameter Username
+Set parameter LicenseID to value 2593664
+Academic license - for non-commercial use only - expires 2025-12-01
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Red Hat Enterprise Linux 8.8 (Ootpa)")
+
+CPU model: Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 36 physical cores, 72 logical processors, using up to 32 threads
+
+Optimize a model with 200 rows, 209262 columns and 2927647 nonzeros
+Model fingerprint: 0xbece11f9
+Variable types: 0 continuous, 209262 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 63.0000000
+Presolve removed 22 rows and 10967 columns (presolve time = 5s)...
+Presolve removed 36 rows and 46602 columns (presolve time = 10s)...
+Presolve removed 36 rows and 47073 columns
+Presolve time: 11.06s
+Presolved: 164 rows, 162189 columns, 1880546 nonzeros
+Variable types: 0 continuous, 162189 integer (162189 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.640000e+02   0.000000e+00     12s
+
+Starting sifting (using dual simplex for sub-problems)...
+
+    Iter     Pivots    Primal Obj      Dual Obj        Time
+       0          0     infinity      0.0000000e+00     12s
+       1        237   1.0000000e+02   1.6666667e+01     12s
+       2        383   7.5666667e+01   2.2566667e+01     12s
+       3        523   4.3194444e+01   2.9442593e+01     12s
+       4        658   3.2527778e+01   3.0676667e+01     12s
+       5        758   3.2527778e+01   3.1499383e+01     12s
+
+Sifting complete
+
+     844    3.2277778e+01   0.000000e+00   0.000000e+00     12s
+
+Root relaxation: objective 3.227778e+01, 844 iterations, 0.19 seconds (0.16 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   32.27778    0   42   63.00000   32.27778  48.8%     -   11s
+H    0     0                      37.0000000   32.27778  12.8%     -   11s
+H    0     0                      36.0000000   32.27778  10.3%     -   13s
+     0     0   33.06667    0   50   36.00000   33.06667  8.15%     -   14s
+     0     0   33.06667    0   54   36.00000   33.06667  8.15%     -   28s
+     0     0   33.25000    0   42   36.00000   33.25000  7.64%     -   41s
+     0     0   33.27778    0   39   36.00000   33.27778  7.56%     -   45s
+     0     0   33.27778    0   44   36.00000   33.27778  7.56%     -   64s
+     0     0   33.43333    0   39   36.00000   33.43333  7.13%     -   72s
+     0     0   33.50000    0   38   36.00000   33.50000  6.94%     -   79s
+     0     0   33.50000    0   38   36.00000   33.50000  6.94%     -   80s
+     0     0   33.50000    0   46   36.00000   33.50000  6.94%     -   82s
+     0     0   33.50000    0   36   36.00000   33.50000  6.94%     -   83s
+     0     0   33.50000    0   23   36.00000   33.50000  6.94%     -  100s
+     0     0   33.50000    0   33   36.00000   33.50000  6.94%     -  105s
+     0     0   33.54167    0   30   36.00000   33.54167  6.83%     -  106s
+     0     0   33.61111    0   46   36.00000   33.61111  6.64%     -  108s
+     0     0   33.61111    0   33   36.00000   33.61111  6.64%     -  109s
+     0     0   33.62121    0   36   36.00000   33.62121  6.61%     -  109s
+     0     0   33.62121    0   33   36.00000   33.62121  6.61%     -  110s
+     0     2   34.11111    0   33   36.00000   34.11111  5.25%     -  136s
+     1     4   34.12121    1   22   36.00000   34.11111  5.25%  60.0  144s
+     3     8   34.12121    2   22   36.00000   34.12121  5.22%  21.3  155s
