@@ -1,0 +1,50 @@
+Instance:  main.py source/balanced/20/76.txt 100
+Number of Paths: 2
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-11-25
+Gurobi Optimizer version 10.0.2 build v10.0.2rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 20 rows, 1729 columns and 19925 nonzeros
+Model fingerprint: 0xcb7c69c4
+Variable types: 0 continuous, 1729 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 5.0000000
+Presolve removed 10 rows and 1615 columns
+Presolve time: 0.01s
+Presolved: 10 rows, 114 columns, 555 nonzeros
+Variable types: 0 continuous, 114 integer (114 binary)
+
+Root relaxation: objective 1.800000e+00, 29 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    1.80000    0    6    5.00000    1.80000  64.0%     -    0s
+H    0     0                       3.0000000    1.80000  40.0%     -    0s
+H    0     0                       2.0000000    1.80000  10.0%     -    0s
+     0     0    1.80000    0    6    2.00000    1.80000  10.0%     -    0s
+
+Explored 1 nodes (29 simplex iterations) in 0.02 seconds (0.01 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 3: 2 3 5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.000000000000e+00, best bound 2.000000000000e+00, gap 0.0000%
+--------------------------------------------------------------------------------
+minTVR: 2
+IP: 2
+Ratio: 1.0
+--------------------------------------------------------------------------------
+IP runtime: 0.1795
+-- Build Instance: 0.04912
+-- Solve: 0.1304
+minTVR runtime: 0.000236
+2 2 1.0 0.04912 0.1304 0.1795 0.000236
