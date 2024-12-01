@@ -1,0 +1,50 @@
+Instance:  main.py source/imbalanced/20/99.txt 8
+Number of Paths: 4
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-11-25
+Gurobi Optimizer version 10.0.2 build v10.0.2rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 20 rows, 888 columns and 10178 nonzeros
+Model fingerprint: 0xdfe75d86
+Variable types: 0 continuous, 888 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 5.0000000
+Presolve removed 14 rows and 873 columns
+Presolve time: 0.00s
+Presolved: 6 rows, 15 columns, 40 nonzeros
+Variable types: 0 continuous, 15 integer (15 binary)
+
+Root relaxation: objective 2.333333e+00, 12 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    2.33333    0    5    5.00000    2.33333  53.3%     -    0s
+H    0     0                       4.0000000    2.33333  41.7%     -    0s
+H    0     0                       3.0000000    2.33333  22.2%     -    0s
+     0     0    2.33333    0    5    3.00000    2.33333  22.2%     -    0s
+
+Explored 1 nodes (12 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 3: 3 4 5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.000000000000e+00, best bound 3.000000000000e+00, gap 0.0000%
+--------------------------------------------------------------------------------
+minTVR: 4
+IP: 3
+Ratio: 1.333
+--------------------------------------------------------------------------------
+IP runtime: 0.08981
+-- Build Instance: 0.03447
+-- Solve: 0.05534
+minTVR runtime: 0.0001903
+4 3 1.333 0.03447 0.05534 0.08981 0.0001903

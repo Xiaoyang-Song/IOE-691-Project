@@ -18,6 +18,7 @@ if __name__ == '__main__':
     if tours is not None:
         print(f"Number of Paths: {len(tours)}")
     else:
+        print("Terminated")
         exit(0)
 
     # IP

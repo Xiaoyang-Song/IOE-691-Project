@@ -32,9 +32,14 @@ summary = []
 
 for i in range(m):
     file_path = os.path.join('out', mode, f'{n}-{D}', f"{i+1}.txt")
-    results = np.array(read_results(file_path, 1)[0].rstrip("\n").split(" "), dtype=np.float32)
-    minTVR, IP, ratio, build_time, sol_time, tot_time, minTVR_time = results
-    summary.append(results)
+
+    results = read_results(file_path, 1)[0].rstrip("\n").split(" ")
+    if results[0] != 'Terminated':
+        results = np.array(results, dtype=np.float32)
+        minTVR, IP, ratio, build_time, sol_time, tot_time, minTVR_time = results
+        # if ratio==2:
+        #     print(i)
+        summary.append(results)
 
 summary = np.array(summary)
 print(summary)
