@@ -31,7 +31,7 @@ H    0     0                       6.0000000    3.33333  44.4%     -    0s
 H    0     0                       4.0000000    3.33333  16.7%     -    0s
      0     0    3.33333    0    8    4.00000    3.33333  16.7%     -    0s
 
-Explored 1 nodes (20 simplex iterations) in 0.00 seconds (0.00 work units)
+Explored 1 nodes (20 simplex iterations) in 0.01 seconds (0.00 work units)
 Thread count was 8 (of 8 available processors)
 
 Solution count 3: 4 6 8 
@@ -43,8 +43,8 @@ minTVR: 4
 IP: 4
 Ratio: 1.0
 --------------------------------------------------------------------------------
-IP runtime: 0.0619
--- Build Instance: 0.03844
--- Solve: 0.02346
-minTVR runtime: 0.000391
-4 4 1.0 0.03844 0.02346 0.0619 0.000391
+IP runtime: 0.08141
+-- Build Instance: 0.04812
+-- Solve: 0.0333
+minTVR runtime: 0.0002999
+4 4 1.0 0.04812 0.0333 0.08141 0.0002999

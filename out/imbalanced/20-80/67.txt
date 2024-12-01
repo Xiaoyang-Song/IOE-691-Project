@@ -17,7 +17,7 @@ Coefficient statistics:
   RHS range        [1e+00, 1e+00]
 Found heuristic solution: objective 3.0000000
 Presolve removed 10 rows and 680 columns
-Presolve time: 0.00s
+Presolve time: 0.01s
 Presolved: 10 rows, 51 columns, 211 nonzeros
 Variable types: 0 continuous, 51 integer (51 binary)
 
@@ -40,8 +40,8 @@ minTVR: 4
 IP: 3
 Ratio: 1.333
 --------------------------------------------------------------------------------
-IP runtime: 0.08585
--- Build Instance: 0.03574
--- Solve: 0.05011
-minTVR runtime: 0.0002162
-4 3 1.333 0.03574 0.05011 0.08585 0.0002162
+IP runtime: 0.1171
+-- Build Instance: 0.04663
+-- Solve: 0.07046
+minTVR runtime: 0.0002871
+4 3 1.333 0.04663 0.07046 0.1171 0.0002871

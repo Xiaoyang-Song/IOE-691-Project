@@ -1,0 +1,3 @@
+Instance:  main.py source/balanced/20/42.txt 50
+Cannot cover node 16 within distance D
+Terminated

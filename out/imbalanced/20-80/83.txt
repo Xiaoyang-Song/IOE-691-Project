@@ -17,7 +17,7 @@ Coefficient statistics:
   RHS range        [1e+00, 1e+00]
 Found heuristic solution: objective 5.0000000
 Presolve removed 10 rows and 139 columns
-Presolve time: 0.00s
+Presolve time: 0.06s
 Presolved: 10 rows, 22 columns, 55 nonzeros
 Variable types: 0 continuous, 22 integer (22 binary)
 
@@ -30,7 +30,7 @@ Root relaxation: objective 3.500000e+00, 13 iterations, 0.00 seconds (0.00 work 
 H    0     0                       4.0000000    3.50000  12.5%     -    0s
      0     0    3.50000    0    3    4.00000    3.50000  12.5%     -    0s
 
-Explored 1 nodes (13 simplex iterations) in 0.00 seconds (0.00 work units)
+Explored 1 nodes (13 simplex iterations) in 0.10 seconds (0.00 work units)
 Thread count was 8 (of 8 available processors)
 
 Solution count 2: 4 5 
@@ -42,8 +42,8 @@ minTVR: 5
 IP: 4
 Ratio: 1.25
 --------------------------------------------------------------------------------
-IP runtime: 0.04769
--- Build Instance: 0.03107
--- Solve: 0.01662
-minTVR runtime: 0.0002148
-5 4 1.25 0.03107 0.01662 0.04769 0.0002148
+IP runtime: 0.1603
+-- Build Instance: 0.04436
+-- Solve: 0.1159
+minTVR runtime: 0.0002632
+5 4 1.25 0.04436 0.1159 0.1603 0.0002632

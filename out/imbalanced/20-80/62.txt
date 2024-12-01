@@ -30,7 +30,7 @@ Root relaxation: objective 3.500000e+00, 7 iterations, 0.00 seconds (0.00 work u
 H    0     0                       4.0000000    3.50000  12.5%     -    0s
      0     0    3.50000    0    3    4.00000    3.50000  12.5%     -    0s
 
-Explored 1 nodes (7 simplex iterations) in 0.00 seconds (0.00 work units)
+Explored 1 nodes (7 simplex iterations) in 0.01 seconds (0.00 work units)
 Thread count was 8 (of 8 available processors)
 
 Solution count 2: 4 5 
@@ -42,8 +42,8 @@ minTVR: 4
 IP: 4
 Ratio: 1.0
 --------------------------------------------------------------------------------
-IP runtime: 0.04795
--- Build Instance: 0.03217
--- Solve: 0.01578
-minTVR runtime: 0.0002072
-4 4 1.0 0.03217 0.01578 0.04795 0.0002072
+IP runtime: 0.06351
+-- Build Instance: 0.04109
+-- Solve: 0.02242
+minTVR runtime: 0.0002871
+4 4 1.0 0.04109 0.02242 0.06351 0.0002871

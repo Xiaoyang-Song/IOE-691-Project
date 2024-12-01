@@ -29,7 +29,7 @@ Root relaxation: cutoff, 6 iterations, 0.00 seconds (0.00 work units)
 
      0     0     cutoff    0         3.00000    3.00000  0.00%     -    0s
 
-Explored 1 nodes (6 simplex iterations) in 0.00 seconds (0.00 work units)
+Explored 1 nodes (6 simplex iterations) in 0.01 seconds (0.00 work units)
 Thread count was 8 (of 8 available processors)
 
 Solution count 2: 3 7 
@@ -41,8 +41,8 @@ minTVR: 4
 IP: 3
 Ratio: 1.333
 --------------------------------------------------------------------------------
-IP runtime: 0.05829
--- Build Instance: 0.03197
--- Solve: 0.02632
-minTVR runtime: 0.0002093
-4 3 1.333 0.03197 0.02632 0.05829 0.0002093
+IP runtime: 0.07152
+-- Build Instance: 0.04113
+-- Solve: 0.03039
+minTVR runtime: 0.0003881
+4 3 1.333 0.04113 0.03039 0.07152 0.0003881
