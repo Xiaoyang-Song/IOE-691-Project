@@ -1,0 +1,51 @@
+Instance:  main.py source/balanced/100/58.txt 100
+Number of Paths: 19
+Set parameter Username
+Set parameter LicenseID to value 2593664
+Academic license - for non-commercial use only - expires 2025-12-01
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Red Hat Enterprise Linux 8.8 (Ootpa)")
+
+CPU model: Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 36 physical cores, 72 logical processors, using up to 32 threads
+
+Optimize a model with 100 rows, 23850 columns and 281668 nonzeros
+Model fingerprint: 0x7bffe9f7
+Variable types: 0 continuous, 23850 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 33.0000000
+Presolve removed 19 rows and 15366 columns
+Presolve time: 0.74s
+Presolved: 81 rows, 8484 columns, 73472 nonzeros
+Variable types: 0 continuous, 8484 integer (8484 binary)
+
+Root relaxation: objective 1.672222e+01, 348 iterations, 0.02 seconds (0.03 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   16.72222    0   22   33.00000   16.72222  49.3%     -    0s
+H    0     0                      18.0000000   16.72222  7.10%     -    0s
+H    0     0                      17.0000000   16.72222  1.63%     -    0s
+     0     0   16.72222    0   22   17.00000   16.72222  1.63%     -    0s
+
+Explored 1 nodes (379 simplex iterations) in 0.88 seconds (0.85 work units)
+Thread count was 32 (of 72 available processors)
+
+Solution count 3: 17 18 33 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.700000000000e+01, best bound 1.700000000000e+01, gap 0.0000%
+--------------------------------------------------------------------------------
+minTVR: 19
+IP: 17
+Ratio: 1.118
+--------------------------------------------------------------------------------
+IP runtime: 3.918
+-- Build Instance: 1.295
+-- Solve: 2.623
+minTVR runtime: 0.0006964
+19 17 1.118 1.295 2.623 3.918 0.0006964
