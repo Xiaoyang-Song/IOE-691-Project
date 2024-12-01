@@ -1,0 +1,50 @@
+Instance:  main.py source/balanced/25/90.txt 60
+Number of Paths: 8
+Set parameter Username
+Set parameter LicenseID to value 2593664
+Academic license - for non-commercial use only - expires 2025-12-01
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Red Hat Enterprise Linux 8.8 (Ootpa)")
+
+CPU model: Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 36 physical cores, 72 logical processors, using up to 32 threads
+
+Optimize a model with 25 rows, 333 columns and 2765 nonzeros
+Model fingerprint: 0x24f14b47
+Variable types: 0 continuous, 333 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 8.0000000
+Presolve removed 14 rows and 308 columns
+Presolve time: 0.00s
+Presolved: 11 rows, 25 columns, 76 nonzeros
+Variable types: 0 continuous, 25 integer (25 binary)
+
+Root relaxation: objective 6.500000e+00, 11 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    6.50000    0    7    8.00000    6.50000  18.8%     -    0s
+H    0     0                       7.0000000    6.50000  7.14%     -    0s
+     0     0    6.50000    0    7    7.00000    6.50000  7.14%     -    0s
+
+Explored 1 nodes (11 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 32 (of 72 available processors)
+
+Solution count 2: 7 8 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.000000000000e+00, best bound 7.000000000000e+00, gap 0.0000%
+--------------------------------------------------------------------------------
+minTVR: 8
+IP: 7
+Ratio: 1.143
+--------------------------------------------------------------------------------
+IP runtime: 0.1151
+-- Build Instance: 0.06835
+-- Solve: 0.04679
+minTVR runtime: 0.00033
+8 7 1.143 0.06835 0.04679 0.1151 0.00033
