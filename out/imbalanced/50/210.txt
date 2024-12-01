@@ -1,0 +1,4 @@
+Instance:  main.py source/imbalanced/50.txt 210
+Number of Paths: 6
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-11-25

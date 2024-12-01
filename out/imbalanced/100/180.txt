@@ -1,0 +1,49 @@
+Instance:  main.py source/imbalanced/100.txt 180
+Number of Paths: 15
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-11-25
+Gurobi Optimizer version 10.0.2 build v10.0.2rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 100 rows, 23834 columns and 287363 nonzeros
+Model fingerprint: 0x6ad9dd08
+Variable types: 0 continuous, 23834 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 36.0000000
+Presolve removed 2 rows and 5958 columns
+Presolve time: 0.22s
+Presolved: 98 rows, 17876 columns, 184220 nonzeros
+Variable types: 0 continuous, 17876 integer (17876 binary)
+
+Root relaxation: objective 1.308333e+01, 402 iterations, 0.06 seconds (0.07 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   13.08333    0    9   36.00000   13.08333  63.7%     -    0s
+H    0     0                      20.0000000   13.08333  34.6%     -    0s
+H    0     0                      14.0000000   13.08333  6.55%     -    0s
+     0     0   13.08333    0    9   14.00000   13.08333  6.55%     -    0s
+
+Explored 1 nodes (402 simplex iterations) in 0.35 seconds (0.38 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 3: 14 20 36 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.400000000000e+01, best bound 1.400000000000e+01, gap 0.0000%
+--------------------------------------------------------------------------------
+minTVR: 15
+IP: 14
+Ratio: 1.071
+--------------------------------------------------------------------------------
+IP runtime: 1.968
+-- Build Instance: 0.4942
+-- Solve: 1.474
+minTVR runtime: 0.0003142

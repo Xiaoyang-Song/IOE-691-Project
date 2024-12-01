@@ -1,0 +1,62 @@
+Instance:  main.py source/imbalanced/50.txt 10
+Number of Paths: 8
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-11-25
+Gurobi Optimizer version 10.0.2 build v10.0.2rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 50 rows, 66374 columns and 1028186 nonzeros
+Model fingerprint: 0x9219569b
+Variable types: 0 continuous, 66374 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 11.0000000
+Presolve removed 7 rows and 6003 columns
+Presolve time: 1.17s
+Presolved: 43 rows, 60371 columns, 713552 nonzeros
+Variable types: 0 continuous, 60371 integer (60371 binary)
+
+Starting sifting (using dual simplex for sub-problems)...
+
+    Iter     Pivots    Primal Obj      Dual Obj        Time
+       0          0     infinity      0.0000000e+00      1s
+       1         74   1.8000000e+01   3.0000000e+00      1s
+       2        102   9.6666667e+00   3.9523810e+00      1s
+       3        122   7.5000000e+00   5.0166667e+00      1s
+       4        139   7.5000000e+00   5.8444444e+00      1s
+
+Sifting complete
+
+
+Root relaxation: objective 7.000000e+00, 159 iterations, 0.05 seconds (0.06 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0    6   11.00000    7.00000  36.4%     -    1s
+H    0     0                       9.0000000    7.00000  22.2%     -    1s
+H    0     0                       8.0000000    7.00000  12.5%     -    1s
+H    0     0                       7.0000000    7.00000  0.00%     -    1s
+     0     0    7.00000    0    6    7.00000    7.00000  0.00%     -    1s
+
+Explored 1 nodes (159 simplex iterations) in 1.54 seconds (2.08 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 4: 7 8 9 11 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.000000000000e+00, best bound 7.000000000000e+00, gap 0.0000%
+--------------------------------------------------------------------------------
+minTVR: 8
+IP: 7
+Ratio: 1.143
+--------------------------------------------------------------------------------
+IP runtime: 6.224
+-- Build Instance: 0.853
+-- Solve: 5.371
+minTVR runtime: 0.0001531
