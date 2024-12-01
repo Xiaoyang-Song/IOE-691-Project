@@ -1,0 +1,92 @@
+Instance:  main.py source/balanced/200/34.txt 120
+Number of Paths: 34
+Set parameter Username
+Set parameter LicenseID to value 2593664
+Academic license - for non-commercial use only - expires 2025-12-01
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Red Hat Enterprise Linux 8.8 (Ootpa)")
+
+CPU model: Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 36 physical cores, 72 logical processors, using up to 32 threads
+
+Optimize a model with 200 rows, 868576 columns and 13659401 nonzeros
+Model fingerprint: 0x2f7fdcc2
+Variable types: 0 continuous, 868576 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 71.0000000
+Presolve removed 0 rows and 10617 columns (presolve time = 5s)...
+Presolve removed 4 rows and 99522 columns (presolve time = 10s)...
+Presolve removed 4 rows and 102312 columns (presolve time = 15s)...
+Presolve removed 4 rows and 102312 columns (presolve time = 20s)...
+Presolve removed 9 rows and 103260 columns (presolve time = 25s)...
+Presolve removed 9 rows and 103260 columns (presolve time = 30s)...
+Presolve removed 9 rows and 103260 columns
+Presolve time: 34.33s
+Presolved: 191 rows, 765316 columns, 9550333 nonzeros
+Variable types: 0 continuous, 765316 integer (765316 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.910000e+02   0.000000e+00     38s
+
+Starting sifting (using dual simplex for sub-problems)...
+
+    Iter     Pivots    Primal Obj      Dual Obj        Time
+       0          0     infinity      0.0000000e+00     38s
+       1        294   1.0000000e+02   1.6666667e+01     38s
+       2        466   6.1166667e+01   2.1116667e+01     38s
+       3        625   3.5886364e+01   2.4525058e+01     38s
+       4        764   3.0401515e+01   2.6157407e+01     38s
+
+Sifting complete
+
+     892    2.9588745e+01   0.000000e+00   0.000000e+00     39s
+
+Root relaxation: objective 2.958874e+01, 892 iterations, 0.86 seconds (0.69 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   29.58874    0   34   71.00000   29.58874  58.3%     -   39s
+H    0     0                      58.0000000   29.58874  49.0%     -   39s
+H    0     0                      33.0000000   29.58874  10.3%     -   40s
+H    0     0                      32.0000000   29.58874  7.54%     -   40s
+     0     0   30.51136    0   41   32.00000   30.51136  4.65%     -   56s
+     0     0   30.52206    0   42   32.00000   30.52206  4.62%     -   59s
+     0     0   30.54167    0   38   32.00000   30.54167  4.56%     -   60s
+     0     0   30.83333    0   36   32.00000   30.83333  3.65%     -   62s
+     0     0   30.83333    0   17   32.00000   30.83333  3.65%     -   68s
+     0     0   30.87121    0   32   32.00000   30.87121  3.53%     -   68s
+     0     0   30.93182    0   42   32.00000   30.93182  3.34%     -   68s
+     0     0   31.00000    0   27   32.00000   31.00000  3.12%     -   68s
+     0     0   31.00000    0   28   32.00000   31.00000  3.12%     -   68s
+     0     0   31.00000    0   35   32.00000   31.00000  3.12%     -   68s
+
+Cutting planes:
+  Gomory: 6
+  Clique: 2
+  MIR: 5
+  Zero half: 3
+  RLT: 2
+
+Explored 1 nodes (1318 simplex iterations) in 71.40 seconds (57.08 work units)
+Thread count was 32 (of 72 available processors)
+
+Solution count 6: 32 33 33 ... 71
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.200000000000e+01, best bound 3.200000000000e+01, gap 0.0000%
+--------------------------------------------------------------------------------
+minTVR: 34
+IP: 32
+Ratio: 1.062
+--------------------------------------------------------------------------------
+IP runtime: 262.9
+-- Build Instance: 108.4
+-- Solve: 154.5
+minTVR runtime: 0.001545
+34 32 1.062 108.4 154.5 262.9 0.001545

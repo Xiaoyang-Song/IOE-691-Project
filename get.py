@@ -33,7 +33,8 @@ eff = 0
 for i in range(m):
     file_path = os.path.join('out', mode, f'{n}-{D}', f"{i+1}.txt")
     results = read_results(file_path, 1)[0].rstrip("\n").split(" ")
-    if results[0] != 'Terminated':
+    if len(results) == 7:
+    # if results[0] != 'Terminated':
         results = np.array(results, dtype=np.float32)
         minTVR, IP, ratio, build_time, sol_time, tot_time, minTVR_time = results
         # if ratio==2:

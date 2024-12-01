@@ -1,0 +1,71 @@
+Instance:  main.py source/balanced/200/26.txt 120
+Number of Paths: 40
+Set parameter Username
+Set parameter LicenseID to value 2593664
+Academic license - for non-commercial use only - expires 2025-12-01
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Red Hat Enterprise Linux 8.8 (Ootpa)")
+
+CPU model: Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 36 physical cores, 72 logical processors, using up to 32 threads
+
+Optimize a model with 200 rows, 207048 columns and 2885224 nonzeros
+Model fingerprint: 0x275cd79a
+Variable types: 0 continuous, 207048 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 72.0000000
+Presolve removed 15 rows and 28234 columns (presolve time = 5s)...
+Presolve removed 15 rows and 28234 columns
+Presolve time: 7.22s
+Presolved: 185 rows, 178814 columns, 2214664 nonzeros
+Variable types: 0 continuous, 178814 integer (178814 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.850000e+02   0.000000e+00      8s
+
+Starting sifting (using dual simplex for sub-problems)...
+
+    Iter     Pivots    Primal Obj      Dual Obj        Time
+       0          0     infinity      0.0000000e+00      8s
+       1        265   1.0000000e+02   1.4285714e+01      8s
+       2        414   6.0250000e+01   2.4500000e+01      8s
+       3        566   3.4305556e+01   2.7034722e+01      8s
+       4        695   3.1116667e+01   2.9302469e+01      8s
+
+Sifting complete
+
+     794    3.1003922e+01   0.000000e+00   0.000000e+00      8s
+
+Root relaxation: objective 3.100392e+01, 794 iterations, 0.21 seconds (0.16 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   31.00392    0   54   72.00000   31.00392  56.9%     -    8s
+H    0     0                      36.0000000   31.00392  13.9%     -    8s
+H    0     0                      35.0000000   31.00392  11.4%     -    8s
+H    0     0                      34.0000000   31.00392  8.81%     -    9s
+     0     0   31.65833    0   38   34.00000   31.65833  6.89%     -   27s
+     0     0   31.66346    0   40   34.00000   31.66346  6.87%     -   49s
+     0     0   31.66346    0   42   34.00000   31.66346  6.87%     -   53s
+     0     0   31.89719    0   44   34.00000   31.89719  6.18%     -   61s
+     0     0   32.14719    0   49   34.00000   32.14719  5.45%     -   62s
+     0     0   32.14719    0   59   34.00000   32.14719  5.45%     -   63s
+     0     0   32.14719    0   52   34.00000   32.14719  5.45%     -   82s
+     0     0   32.14719    0   33   34.00000   32.14719  5.45%     -   83s
+     0     0   32.14719    0   35   34.00000   32.14719  5.45%     -   91s
+     0     0   32.14719    0   43   34.00000   32.14719  5.45%     -   99s
+     0     0   32.14719    0   33   34.00000   32.14719  5.45%     -  105s
+     0     0   32.14719    0   45   34.00000   32.14719  5.45%     -  106s
+     0     0   32.15820    0   48   34.00000   32.15820  5.42%     -  107s
+     0     0   32.15820    0   48   34.00000   32.15820  5.42%     -  107s
+     0     0   32.17600    0   47   34.00000   32.17600  5.36%     -  108s
+     0     0   32.17835    0   55   34.00000   32.17835  5.36%     -  109s
+     0     0   32.17835    0   49   34.00000   32.17835  5.36%     -  110s
+     0     2   32.17835    0   46   34.00000   32.17835  5.36%     -  125s
+     3     8   32.17835    2   52   34.00000   32.17835  5.36%  39.0  131s

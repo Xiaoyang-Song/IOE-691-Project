@@ -1,0 +1,61 @@
+Instance:  main.py source/balanced/200/38.txt 120
+Number of Paths: 44
+Set parameter Username
+Set parameter LicenseID to value 2593664
+Academic license - for non-commercial use only - expires 2025-12-01
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Red Hat Enterprise Linux 8.8 (Ootpa)")
+
+CPU model: Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 36 physical cores, 72 logical processors, using up to 32 threads
+
+Optimize a model with 200 rows, 27208 columns and 327184 nonzeros
+Model fingerprint: 0x05f657f3
+Variable types: 0 continuous, 27208 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 61.0000000
+Presolve removed 87 rows and 23675 columns
+Presolve time: 0.64s
+Presolved: 113 rows, 3533 columns, 27050 nonzeros
+Variable types: 0 continuous, 3533 integer (3533 binary)
+Found heuristic solution: objective 60.0000000
+
+Root relaxation: objective 3.705000e+01, 307 iterations, 0.01 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   37.05000    0   37   60.00000   37.05000  38.3%     -    0s
+H    0     0                      58.0000000   37.05000  36.1%     -    0s
+H    0     0                      41.0000000   37.05000  9.63%     -    0s
+H    0     0                      40.0000000   37.05000  7.38%     -    0s
+     0     0   38.26667    0   26   40.00000   38.26667  4.33%     -    0s
+     0     0   38.26667    0   19   40.00000   38.26667  4.33%     -    0s
+     0     0   38.40000    0   27   40.00000   38.40000  4.00%     -    0s
+     0     0   38.66667    0   16   40.00000   38.66667  3.33%     -    1s
+     0     0   38.83333    0    9   40.00000   38.83333  2.92%     -    1s
+
+Cutting planes:
+  Gomory: 1
+  Zero half: 2
+
+Explored 1 nodes (512 simplex iterations) in 1.90 seconds (0.76 work units)
+Thread count was 32 (of 72 available processors)
+
+Solution count 8: 40 40 41 ... 61
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.000000000000e+01, best bound 4.000000000000e+01, gap 0.0000%
+--------------------------------------------------------------------------------
+minTVR: 44
+IP: 40
+Ratio: 1.1
+--------------------------------------------------------------------------------
+IP runtime: 19.41
+-- Build Instance: 15.35
+-- Solve: 4.058
+minTVR runtime: 0.09561
+44 40 1.1 15.35 4.058 19.41 0.09561

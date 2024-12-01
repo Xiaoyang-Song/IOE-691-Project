@@ -1,0 +1,25 @@
+Instance:  main.py source/balanced/100/88.txt 120
+Number of Paths: 14
+Set parameter Username
+Set parameter LicenseID to value 2593664
+Academic license - for non-commercial use only - expires 2025-12-01
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Red Hat Enterprise Linux 8.8 (Ootpa)")
+
+CPU model: Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 36 physical cores, 72 logical processors, using up to 32 threads
+
+Optimize a model with 100 rows, 1275094 columns and 21515819 nonzeros
+Model fingerprint: 0x2d63ca92
+Variable types: 0 continuous, 1275094 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 32.0000000
+Presolve removed 0 rows and 0 columns (presolve time = 5s)...
+Presolve removed 0 rows and 427 columns (presolve time = 12s)...
+Presolve removed 0 rows and 427 columns (presolve time = 15s)...
+Presolve removed 4 rows and 70247 columns (presolve time = 20s)...
+Presolve removed 4 rows and 70281 columns (presolve time = 25s)...
+Presolve removed 4 rows and 70281 columns (presolve time = 31s)...

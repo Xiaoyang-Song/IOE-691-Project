@@ -1,0 +1,65 @@
+Instance:  main.py source/balanced/100/52.txt 120
+Number of Paths: 19
+Set parameter Username
+Set parameter LicenseID to value 2593664
+Academic license - for non-commercial use only - expires 2025-12-01
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Red Hat Enterprise Linux 8.8 (Ootpa)")
+
+CPU model: Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 36 physical cores, 72 logical processors, using up to 32 threads
+
+Optimize a model with 100 rows, 48522 columns and 614479 nonzeros
+Model fingerprint: 0x7f75e5ca
+Variable types: 0 continuous, 48522 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 34.0000000
+Presolve removed 8 rows and 10848 columns
+Presolve time: 1.28s
+Presolved: 92 rows, 37674 columns, 386156 nonzeros
+Variable types: 0 continuous, 37674 integer (37674 binary)
+
+Starting sifting (using dual simplex for sub-problems)...
+
+    Iter     Pivots    Primal Obj      Dual Obj        Time
+       0          0     infinity      0.0000000e+00      1s
+       1        116   5.0000000e+01   8.3333333e+00      1s
+       2        189   3.6500000e+01   1.1150000e+01      1s
+       3        272   1.8416667e+01   1.3572222e+01      1s
+
+Sifting complete
+
+
+Root relaxation: objective 1.641667e+01, 333 iterations, 0.04 seconds (0.03 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   16.41667    0   12   34.00000   16.41667  51.7%     -    1s
+H    0     0                      31.0000000   16.41667  47.0%     -    1s
+H    0     0                      18.0000000   16.41667  8.80%     -    1s
+H    0     0                      17.0000000   16.41667  3.43%     -    2s
+
+Cutting planes:
+  Zero half: 3
+
+Explored 1 nodes (393 simplex iterations) in 2.14 seconds (1.53 work units)
+Thread count was 32 (of 72 available processors)
+
+Solution count 4: 17 18 31 34 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.700000000000e+01, best bound 1.700000000000e+01, gap 0.0000%
+--------------------------------------------------------------------------------
+minTVR: 19
+IP: 17
+Ratio: 1.118
+--------------------------------------------------------------------------------
+IP runtime: 8.697
+-- Build Instance: 2.863
+-- Solve: 5.834
+minTVR runtime: 0.0006132
+19 17 1.118 2.863 5.834 8.697 0.0006132

@@ -1,0 +1,61 @@
+Instance:  main.py source/balanced/100/62.txt 120
+Number of Paths: 17
+Set parameter Username
+Set parameter LicenseID to value 2593664
+Academic license - for non-commercial use only - expires 2025-12-01
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Red Hat Enterprise Linux 8.8 (Ootpa)")
+
+CPU model: Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 36 physical cores, 72 logical processors, using up to 32 threads
+
+Optimize a model with 100 rows, 33951 columns and 409300 nonzeros
+Model fingerprint: 0xfc20c937
+Variable types: 0 continuous, 33951 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 32.0000000
+Presolve removed 3 rows and 11704 columns
+Presolve time: 0.74s
+Presolved: 97 rows, 22247 columns, 252061 nonzeros
+Variable types: 0 continuous, 22247 integer (22247 binary)
+
+Starting sifting (using dual simplex for sub-problems)...
+
+    Iter     Pivots    Primal Obj      Dual Obj        Time
+       0          0     infinity      0.0000000e+00      1s
+       1        137   5.0000000e+01   8.3333333e+00      1s
+       2        222   1.7888889e+01   1.0791667e+01      1s
+       3        321   1.3577778e+01   1.2992521e+01      1s
+
+Sifting complete
+
+
+Root relaxation: objective 1.357778e+01, 389 iterations, 0.03 seconds (0.02 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   13.57778    0   22   32.00000   13.57778  57.6%     -    0s
+H    0     0                      14.0000000   13.57778  3.02%     -    0s
+     0     0   13.57778    0   22   14.00000   13.57778  3.02%     -    0s
+
+Explored 1 nodes (412 simplex iterations) in 0.94 seconds (0.90 work units)
+Thread count was 32 (of 72 available processors)
+
+Solution count 2: 14 32 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.400000000000e+01, best bound 1.400000000000e+01, gap 0.0000%
+--------------------------------------------------------------------------------
+minTVR: 17
+IP: 14
+Ratio: 1.214
+--------------------------------------------------------------------------------
+IP runtime: 5.144
+-- Build Instance: 1.706
+-- Solve: 3.438
+minTVR runtime: 0.0006831
+17 14 1.214 1.706 3.438 5.144 0.0006831

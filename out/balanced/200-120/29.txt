@@ -1,0 +1,5 @@
+Instance:  main.py source/balanced/200/29.txt 120
+Number of Paths: 30
+Set parameter Username
+Set parameter LicenseID to value 2593664
+Academic license - for non-commercial use only - expires 2025-12-01

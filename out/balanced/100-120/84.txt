@@ -1,0 +1,93 @@
+Instance:  main.py source/balanced/100/84.txt 120
+Number of Paths: 12
+Set parameter Username
+Set parameter LicenseID to value 2593664
+Academic license - for non-commercial use only - expires 2025-12-01
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Red Hat Enterprise Linux 8.8 (Ootpa)")
+
+CPU model: Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 36 physical cores, 72 logical processors, using up to 32 threads
+
+Optimize a model with 100 rows, 812137 columns and 12540163 nonzeros
+Model fingerprint: 0x8ad8a8ff
+Variable types: 0 continuous, 812137 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 37.0000000
+Presolve removed 0 rows and 0 columns (presolve time = 10s)...
+Presolve removed 0 rows and 0 columns (presolve time = 10s)...
+Presolve removed 0 rows and 0 columns (presolve time = 20s)...
+Presolve removed 0 rows and 0 columns (presolve time = 22s)...
+Presolve removed 0 rows and 0 columns (presolve time = 26s)...
+Presolve removed 0 rows and 0 columns (presolve time = 30s)...
+Presolve removed 0 rows and 0 columns (presolve time = 38s)...
+Presolve removed 0 rows and 0 columns (presolve time = 42s)...
+Presolve removed 0 rows and 0 columns (presolve time = 45s)...
+Presolve removed 3 rows and 0 columns (presolve time = 50s)...
+Presolve removed 3 rows and 13416 columns (presolve time = 56s)...
+Presolve removed 3 rows and 13416 columns (presolve time = 65s)...
+Presolve removed 3 rows and 13416 columns (presolve time = 70s)...
+Presolve removed 3 rows and 13416 columns (presolve time = 75s)...
+Presolve removed 3 rows and 13416 columns (presolve time = 80s)...
+Presolve removed 3 rows and 13416 columns (presolve time = 88s)...
+Presolve removed 3 rows and 13416 columns (presolve time = 90s)...
+Presolve removed 3 rows and 13416 columns (presolve time = 98s)...
+Presolve removed 3 rows and 13416 columns (presolve time = 100s)...
+Presolve removed 3 rows and 13416 columns (presolve time = 105s)...
+Presolve removed 3 rows and 13416 columns (presolve time = 124s)...
+Presolve removed 3 rows and 13416 columns (presolve time = 125s)...
+Presolve removed 3 rows and 13416 columns
+Presolve time: 129.14s
+Presolved: 97 rows, 798721 columns, 10689130 nonzeros
+Variable types: 0 continuous, 798721 integer (798721 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   9.700000e+01   0.000000e+00    132s
+
+Starting sifting (using dual simplex for sub-problems)...
+
+    Iter     Pivots    Primal Obj      Dual Obj        Time
+       0          0     infinity      0.0000000e+00    132s
+       1        186   5.0000000e+01   8.3333333e+00    132s
+       2        296   1.5166667e+01   9.0166667e+00    132s
+       3        377   1.0708333e+01   9.8179825e+00    132s
+       4        459   1.0708333e+01   1.0708333e+01    132s
+
+Sifting complete
+
+     459    1.0708333e+01   0.000000e+00   0.000000e+00    132s
+
+Root relaxation: objective 1.070833e+01, 459 iterations, 1.00 seconds (0.72 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   10.70833    0   21   37.00000   10.70833  71.1%     -  133s
+H    0     0                      36.0000000   10.70833  70.3%     -  133s
+H    0     0                      13.0000000   10.70833  17.6%     -  135s
+H    0     0                      12.0000000   10.70833  10.8%     -  136s
+H    0     0                      11.0000000   10.70833  2.65%     -  138s
+     0     0   10.70833    0   21   11.00000   10.70833  2.65%     -  138s
+
+Explored 1 nodes (608 simplex iterations) in 138.30 seconds (30.65 work units)
+Thread count was 32 (of 72 available processors)
+
+Solution count 5: 11 12 13 ... 37
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+--------------------------------------------------------------------------------
+minTVR: 12
+IP: 11
+Ratio: 1.091
+--------------------------------------------------------------------------------
+IP runtime: 281.3
+-- Build Instance: 42.21
+-- Solve: 239.1
+minTVR runtime: 0.0006626
+12 11 1.091 42.21 239.1 281.3 0.0006626

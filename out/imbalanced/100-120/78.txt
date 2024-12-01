@@ -1,0 +1,58 @@
+Instance:  main.py source/imbalanced/100/78.txt 120
+Number of Paths: 25
+Set parameter Username
+Set parameter LicenseID to value 2593664
+Academic license - for non-commercial use only - expires 2025-12-01
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Red Hat Enterprise Linux 8.8 (Ootpa)")
+
+CPU model: Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 36 physical cores, 72 logical processors, using up to 32 threads
+
+Optimize a model with 100 rows, 5573 columns and 63810 nonzeros
+Model fingerprint: 0x7f88d572
+Variable types: 0 continuous, 5573 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 35.0000000
+Presolve removed 61 rows and 5452 columns
+Presolve time: 0.05s
+Presolved: 39 rows, 121 columns, 316 nonzeros
+Found heuristic solution: objective 34.0000000
+Variable types: 0 continuous, 121 integer (121 binary)
+
+Root relaxation: objective 2.133333e+01, 59 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   21.33333    0    8   34.00000   21.33333  37.3%     -    0s
+H    0     0                      25.0000000   21.33333  14.7%     -    0s
+H    0     0                      24.0000000   21.33333  11.1%     -    0s
+H    0     0                      23.0000000   21.33333  7.25%     -    0s
+H    0     0                      22.0000000   21.33333  3.03%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 1
+  Zero half: 1
+
+Explored 1 nodes (59 simplex iterations) in 0.05 seconds (0.04 work units)
+Thread count was 32 (of 72 available processors)
+
+Solution count 6: 22 23 24 ... 35
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.200000000000e+01, best bound 2.200000000000e+01, gap 0.0000%
+--------------------------------------------------------------------------------
+minTVR: 25
+IP: 22
+Ratio: 1.136
+--------------------------------------------------------------------------------
+IP runtime: 0.8297
+-- Build Instance: 0.3698
+-- Solve: 0.4599
+minTVR runtime: 0.0007217
+25 22 1.136 0.3698 0.4599 0.8297 0.0007217
