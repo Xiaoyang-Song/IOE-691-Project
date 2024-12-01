@@ -1,0 +1,60 @@
+Instance:  main.py source/balanced/100/2.txt 10
+Number of Paths: 20
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-11-25
+Gurobi Optimizer version 10.0.2 build v10.0.2rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 100 rows, 71640 columns and 1046045 nonzeros
+Model fingerprint: 0x979f8382
+Variable types: 0 continuous, 71640 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 31.0000000
+Presolve removed 66 rows and 71368 columns
+Presolve time: 0.54s
+Presolved: 34 rows, 272 columns, 870 nonzeros
+Found heuristic solution: objective 26.0000000
+Variable types: 0 continuous, 272 integer (272 binary)
+
+Root relaxation: objective 1.833333e+01, 66 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   18.33333    0   10   26.00000   18.33333  29.5%     -    0s
+H    0     0                      24.0000000   18.33333  23.6%     -    0s
+H    0     0                      20.0000000   18.33333  8.33%     -    0s
+     0     0   19.00000    0   12   20.00000   19.00000  5.00%     -    0s
+     0     0   19.00000    0    9   20.00000   19.00000  5.00%     -    0s
+     0     0   19.00000    0   11   20.00000   19.00000  5.00%     -    0s
+     0     0   19.00000    0    6   20.00000   19.00000  5.00%     -    0s
+*    0     0               0      19.0000000   19.00000  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 1
+  Zero half: 3
+
+Explored 1 nodes (124 simplex iterations) in 0.63 seconds (0.70 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 5: 19 20 24 ... 31
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.900000000000e+01, best bound 1.900000000000e+01, gap 0.0000%
+--------------------------------------------------------------------------------
+minTVR: 20
+IP: 19
+Ratio: 1.053
+--------------------------------------------------------------------------------
+IP runtime: 6.324
+-- Build Instance: 1.666
+-- Solve: 4.657
+minTVR runtime: 0.000385
+20 19 1.053 1.666 4.657 6.324 0.000385

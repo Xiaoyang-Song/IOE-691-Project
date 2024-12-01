@@ -1,0 +1,1 @@
+python get.py -mode 'balanced' -n 50 -D 10 -m 5

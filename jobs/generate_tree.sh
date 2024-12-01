@@ -12,10 +12,13 @@
 # python BinaryTreeGenerator.py -n 100 --min 5 --max 10 -o imbalanced/100.txt
 
 # Generate multiple randomized instances
-n=50
+n=100
 out="balanced/$n"
+outi="imbalanced/$n"
 mkdir -p "source/balanced/$n"
+mkdir -p "source/imbalanced/$n"
 for i in {1..100}
 do
     python BinaryTreeGenerator.py -n "$n" --min 0 --max 1 -o "$out/$i.txt" -b
+    python BinaryTreeGenerator.py -n "$n" --min 0 --max 1 -o "$outi/$i.txt"
 done
