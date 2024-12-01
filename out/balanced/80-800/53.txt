@@ -1,0 +1,59 @@
+Instance:  main.py source/balanced/80/53.txt 800
+Number of Paths: 18
+Set parameter Username
+Set parameter LicenseID to value 2593664
+Academic license - for non-commercial use only - expires 2025-12-01
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Red Hat Enterprise Linux 8.8 (Ootpa)")
+
+CPU model: Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 36 physical cores, 72 logical processors, using up to 32 threads
+
+Optimize a model with 80 rows, 16633 columns and 196455 nonzeros
+Model fingerprint: 0x9639834c
+Variable types: 0 continuous, 16633 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 27.0000000
+Presolve removed 47 rows and 16002 columns
+Presolve time: 0.31s
+Presolved: 33 rows, 631 columns, 1722 nonzeros
+Found heuristic solution: objective 25.0000000
+Variable types: 0 continuous, 631 integer (631 binary)
+
+Root relaxation: objective 1.540476e+01, 89 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   15.40476    0   14   25.00000   15.40476  38.4%     -    0s
+H    0     0                      24.0000000   15.40476  35.8%     -    0s
+H    0     0                      18.0000000   15.40476  14.4%     -    0s
+H    0     0                      17.0000000   15.40476  9.38%     -    0s
+     0     0   15.58333    0   14   17.00000   15.58333  8.33%     -    0s
+     0     0   15.75000    0   14   17.00000   15.75000  7.35%     -    0s
+H    0     0                      16.0000000   15.75000  1.56%     -    0s
+
+Cutting planes:
+  MIR: 3
+  Zero half: 5
+
+Explored 1 nodes (109 simplex iterations) in 0.38 seconds (0.26 work units)
+Thread count was 32 (of 72 available processors)
+
+Solution count 6: 16 17 18 ... 27
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.600000000000e+01, best bound 1.600000000000e+01, gap 0.0000%
+--------------------------------------------------------------------------------
+minTVR: 18
+IP: 16
+Ratio: 1.125
+--------------------------------------------------------------------------------
+IP runtime: 2.328
+-- Build Instance: 0.7348
+-- Solve: 1.593
+minTVR runtime: 0.0006824
+18 16 1.125 0.7348 1.593 2.328 0.0006824

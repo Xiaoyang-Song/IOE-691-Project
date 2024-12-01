@@ -1,0 +1,48 @@
+Instance:  main.py source/balanced/80/87.txt 800
+Number of Paths: 21
+Set parameter Username
+Set parameter LicenseID to value 2593664
+Academic license - for non-commercial use only - expires 2025-12-01
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Red Hat Enterprise Linux 8.8 (Ootpa)")
+
+CPU model: Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 36 physical cores, 72 logical processors, using up to 32 threads
+
+Optimize a model with 80 rows, 6620 columns and 74071 nonzeros
+Model fingerprint: 0xa8862bf3
+Variable types: 0 continuous, 6620 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 24.0000000
+Presolve removed 56 rows and 6546 columns
+Presolve time: 0.04s
+Presolved: 24 rows, 74 columns, 189 nonzeros
+Variable types: 0 continuous, 74 integer (74 binary)
+
+Root relaxation: objective 2.000000e+01, 31 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0      20.0000000   20.00000  0.00%     -    0s
+
+Explored 1 nodes (31 simplex iterations) in 0.05 seconds (0.04 work units)
+Thread count was 32 (of 72 available processors)
+
+Solution count 2: 20 24 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.000000000000e+01, best bound 2.000000000000e+01, gap 0.0000%
+--------------------------------------------------------------------------------
+minTVR: 21
+IP: 20
+Ratio: 1.05
+--------------------------------------------------------------------------------
+IP runtime: 0.8882
+-- Build Instance: 0.3282
+-- Solve: 0.56
+minTVR runtime: 0.0007677
+21 20 1.05 0.3282 0.56 0.8882 0.0007677
