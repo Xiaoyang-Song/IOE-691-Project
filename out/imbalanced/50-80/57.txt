@@ -1,0 +1,3 @@
+Instance:  main.py source/imbalanced/50/57.txt 80
+Cannot cover node 47 within distance D
+Terminated

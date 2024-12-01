@@ -1,0 +1,50 @@
+Instance:  main.py source/imbalanced/50/75.txt 80
+Number of Paths: 12
+Set parameter Username
+Set parameter LicenseID to value 2593664
+Academic license - for non-commercial use only - expires 2025-12-01
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Red Hat Enterprise Linux 8.8 (Ootpa)")
+
+CPU model: Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 36 physical cores, 72 logical processors, using up to 32 threads
+
+Optimize a model with 50 rows, 2806 columns and 30888 nonzeros
+Model fingerprint: 0x86b46592
+Variable types: 0 continuous, 2806 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 14.0000000
+Presolve removed 34 rows and 2758 columns
+Presolve time: 0.02s
+Presolved: 16 rows, 48 columns, 116 nonzeros
+Variable types: 0 continuous, 48 integer (48 binary)
+
+Root relaxation: objective 1.075000e+01, 21 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   10.75000    0    5   14.00000   10.75000  23.2%     -    0s
+H    0     0                      11.0000000   10.75000  2.27%     -    0s
+     0     0   10.75000    0    5   11.00000   10.75000  2.27%     -    0s
+
+Explored 1 nodes (21 simplex iterations) in 0.03 seconds (0.02 work units)
+Thread count was 32 (of 72 available processors)
+
+Solution count 2: 11 14 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+--------------------------------------------------------------------------------
+minTVR: 12
+IP: 11
+Ratio: 1.091
+--------------------------------------------------------------------------------
+IP runtime: 0.3338
+-- Build Instance: 0.1004
+-- Solve: 0.2334
+minTVR runtime: 0.0005217
+12 11 1.091 0.1004 0.2334 0.3338 0.0005217

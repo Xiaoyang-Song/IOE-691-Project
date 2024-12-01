@@ -1,7 +1,6 @@
 
 # Run on single instances (balanced, 50, 10)
 n=100
-
 D=120
 instance="source/balanced/$n"
 out="out/balanced/$n-$D"
