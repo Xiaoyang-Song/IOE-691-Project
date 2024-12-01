@@ -1,2 +1,0 @@
-Instance:  main.py source/balanced/100.txt 250
-Number of Paths: 10

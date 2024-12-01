@@ -1,0 +1,3 @@
+Instance:  main.py source/balanced/10/44.txt 40
+Cannot cover node 8 within distance D
+Terminated

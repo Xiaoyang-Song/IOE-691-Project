@@ -1,0 +1,66 @@
+Instance:  main.py source/balanced/100/14.txt 120
+Number of Paths: 16
+Set parameter Username
+Set parameter LicenseID to value 2593664
+Academic license - for non-commercial use only - expires 2025-12-01
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Red Hat Enterprise Linux 8.8 (Ootpa)")
+
+CPU model: Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 36 physical cores, 72 logical processors, using up to 32 threads
+
+Optimize a model with 100 rows, 48279 columns and 605964 nonzeros
+Model fingerprint: 0x47c3cf81
+Variable types: 0 continuous, 48279 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 28.0000000
+Presolve removed 7 rows and 11195 columns
+Presolve time: 1.54s
+Presolved: 93 rows, 37084 columns, 406272 nonzeros
+Variable types: 0 continuous, 37084 integer (37084 binary)
+
+Starting sifting (using dual simplex for sub-problems)...
+
+    Iter     Pivots    Primal Obj      Dual Obj        Time
+       0          0     infinity      0.0000000e+00      2s
+       1        125   5.0000000e+01   8.3333333e+00      2s
+       2        200   1.8666667e+01   1.0400000e+01      2s
+       3        275   1.2844444e+01   1.2572840e+01      2s
+
+Sifting complete
+
+
+Root relaxation: objective 1.284444e+01, 328 iterations, 0.04 seconds (0.03 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   12.84444    0   29   28.00000   12.84444  54.1%     -    1s
+H    0     0                      15.0000000   12.84444  14.4%     -    1s
+H    0     0                      14.0000000   12.84444  8.25%     -    1s
+     0     0 infeasible    0        14.00000   14.00000  0.00%     -    2s
+
+Cutting planes:
+  MIR: 2
+  Zero half: 4
+
+Explored 1 nodes (360 simplex iterations) in 2.13 seconds (1.95 work units)
+Thread count was 32 (of 72 available processors)
+
+Solution count 3: 14 15 28 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.400000000000e+01, best bound 1.400000000000e+01, gap 0.0000%
+--------------------------------------------------------------------------------
+minTVR: 16
+IP: 14
+Ratio: 1.143
+--------------------------------------------------------------------------------
+IP runtime: 8.231
+-- Build Instance: 2.47
+-- Solve: 5.761
+minTVR runtime: 0.00068
+16 14 1.143 2.47 5.761 8.231 0.00068

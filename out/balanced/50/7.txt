@@ -1,2 +1,0 @@
-Instance:  main.py out/balanced/50/7.txt 10
-Input file is empty.

@@ -1,7 +1,7 @@
 
 # Run on single instances (balanced, 50, 10)
-n=50
-D=80
+n=10
+D=40
 instance="source/balanced/$n"
 out="out/balanced/$n-$D"
 mkdir -p "$out"

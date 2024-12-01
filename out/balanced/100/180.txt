@@ -1,4 +1,0 @@
-Instance:  main.py source/balanced/100.txt 180
-Number of Paths: 13
-Set parameter Username
-Academic license - for non-commercial use only - expires 2025-11-25

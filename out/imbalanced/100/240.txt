@@ -1,2 +1,0 @@
-Instance:  main.py source/imbalanced/100.txt 240
-Number of Paths: 12
