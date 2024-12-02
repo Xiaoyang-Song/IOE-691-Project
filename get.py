@@ -34,7 +34,7 @@ for i in range(m):
     file_path = os.path.join('out', mode, f'{n}-{D}', f"{i+1}.txt")
     results = read_results(file_path, 1)[0].rstrip("\n").split(" ")
     if len(results) == 7:
-    # if results[0] != 'Terminated':
+        # if results[0] != 'Terminated':
         results = np.array(results, dtype=np.float32)
         minTVR, IP, ratio, build_time, sol_time, tot_time, minTVR_time = results
         # if ratio==2:
@@ -46,18 +46,19 @@ summary = np.array(summary)
 print(summary)
 
 x, y = summary[:,1], summary[:,0]
-plt.scatter(x,y, color='black', label='instance', marker='x',s=15)
+plt.scatter(x,y, color='black', label='instance', marker='x',s=25)
 
 x_line = np.linspace(min(x), max(x), 100)  # Generate x values for the line
 y_line_1 = x_line 
 y_line_2 = 2 * x_line
 plt.plot(x_line, y_line_1, color='green', label='LB')
-plt.plot(x_line, y_line_2, color='red', label='UB')
+plt.plot(x_line, y_line_2, color='blue', label='UB')
 plt.xticks(np.arange(int(np.floor(min(x))), int(np.ceil(max(x))) + 1, 1))
 
-plt.xlabel('IP value')
-plt.ylabel('minTVR value')
-plt.title(f'Results on randomized instance (n={n} & D={D})')
+plt.xlabel('Benchmark IP value', fontsize=14)
+plt.ylabel('minTVR value', fontsize=14)
+# tag = 'B' if mode=='balanced' else 'IB'
+plt.title(f'Results on {mode} random tree (n={n} & D={D})')
 
 plt.legend()
 fname = os.path.join('figure', f"{mode}-{n}-{D}.png")
