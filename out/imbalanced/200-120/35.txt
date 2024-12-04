@@ -1,0 +1,61 @@
+Instance:  main.py source/imbalanced/200/35.txt 120
+Number of Paths: 34
+Set parameter Username
+Set parameter LicenseID to value 2593664
+Academic license - for non-commercial use only - expires 2025-12-01
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Red Hat Enterprise Linux 8.8 (Ootpa)")
+
+CPU model: Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 36 physical cores, 72 logical processors, using up to 32 threads
+
+Optimize a model with 200 rows, 1186453 columns and 20386843 nonzeros
+Model fingerprint: 0xbbbfbfba
+Variable types: 0 continuous, 1186453 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 75.0000000
+Presolve removed 1 rows and 0 columns (presolve time = 6s)...
+Presolve removed 1 rows and 7871 columns (presolve time = 10s)...
+Presolve removed 5 rows and 62245 columns (presolve time = 15s)...
+Presolve removed 5 rows and 62245 columns (presolve time = 20s)...
+Presolve removed 5 rows and 62245 columns (presolve time = 26s)...
+Presolve removed 6 rows and 62245 columns (presolve time = 30s)...
+Presolve removed 6 rows and 62392 columns (presolve time = 35s)...
+Presolve removed 6 rows and 62392 columns (presolve time = 40s)...
+Presolve removed 6 rows and 62392 columns
+Presolve time: 40.29s
+Presolved: 194 rows, 1124061 columns, 14295876 nonzeros
+Variable types: 0 continuous, 1124061 integer (1124061 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.940000e+02   0.000000e+00     44s
+
+Starting sifting (using dual simplex for sub-problems)...
+
+    Iter     Pivots    Primal Obj      Dual Obj        Time
+       0          0     infinity      0.0000000e+00     44s
+       1        251   1.0000000e+02   1.4285714e+01     44s
+       2        402   6.4000000e+01   2.0500000e+01     44s
+       3        565   3.0199306e+01   2.3799769e+01     44s
+       4        689   2.7147222e+01   2.4636632e+01     44s
+
+Sifting complete
+
+     819    2.7147222e+01   0.000000e+00   0.000000e+00     45s
+
+Root relaxation: objective 2.714722e+01, 819 iterations, 1.26 seconds (1.02 work units)
+Total elapsed time = 45.13s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   27.14722    0   48   75.00000   27.14722  63.8%     -   45s
+H    0     0                      32.0000000   27.14722  15.2%     -   46s
+H    0     0                      31.0000000   27.14722  12.4%     -   46s
+H    0     0                      30.0000000   27.14722  9.51%     -   56s
+     0     0   27.99722    0   45   30.00000   27.99722  6.68%     -   63s

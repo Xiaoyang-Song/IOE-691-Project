@@ -1,0 +1,57 @@
+Instance:  main.py source/imbalanced/200/21.txt 120
+Number of Paths: 48
+Set parameter Username
+Set parameter LicenseID to value 2593664
+Academic license - for non-commercial use only - expires 2025-12-01
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Red Hat Enterprise Linux 8.8 (Ootpa)")
+
+CPU model: Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 36 physical cores, 72 logical processors, using up to 32 threads
+
+Optimize a model with 200 rows, 21356 columns and 265447 nonzeros
+Model fingerprint: 0x07024c31
+Variable types: 0 continuous, 21356 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 65.0000000
+Presolve removed 104 rows and 20791 columns
+Presolve time: 0.33s
+Presolved: 96 rows, 565 columns, 2161 nonzeros
+Found heuristic solution: objective 62.0000000
+Variable types: 0 continuous, 565 integer (565 binary)
+
+Root relaxation: objective 4.033333e+01, 155 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   40.33333    0   27   62.00000   40.33333  34.9%     -    0s
+H    0     0                      57.0000000   40.33333  29.2%     -    0s
+H    0     0                      54.0000000   40.33333  25.3%     -    0s
+H    0     0                      46.0000000   40.33333  12.3%     -    0s
+H    0     0                      43.0000000   40.33333  6.20%     -    0s
+     0     0   41.16667    0   15   43.00000   41.16667  4.26%     -    0s
+     0     0   41.50000    0   17   43.00000   41.50000  3.49%     -    0s
+     0     0   41.50000    0    5   43.00000   41.50000  3.49%     -    0s
+H    0     0                      42.0000000   41.50000  1.19%     -    0s
+
+Explored 1 nodes (231 simplex iterations) in 0.84 seconds (0.36 work units)
+Thread count was 32 (of 72 available processors)
+
+Solution count 8: 42 43 45 ... 65
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.200000000000e+01, best bound 4.200000000000e+01, gap 0.0000%
+--------------------------------------------------------------------------------
+minTVR: 48
+IP: 42
+Ratio: 1.143
+--------------------------------------------------------------------------------
+IP runtime: 4.954
+-- Build Instance: 2.434
+-- Solve: 2.52
+minTVR runtime: 0.001446
+48 42 1.143 2.434 2.52 4.954 0.001446

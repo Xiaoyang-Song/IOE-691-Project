@@ -1,0 +1,78 @@
+Instance:  main.py source/balanced/200/90.txt 120
+Number of Paths: 33
+Set parameter Username
+Set parameter LicenseID to value 2593664
+Academic license - for non-commercial use only - expires 2025-12-01
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Red Hat Enterprise Linux 8.8 (Ootpa)")
+
+CPU model: Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 36 physical cores, 72 logical processors, using up to 32 threads
+
+Optimize a model with 200 rows, 386939 columns and 5662958 nonzeros
+Model fingerprint: 0x11d35efa
+Variable types: 0 continuous, 386939 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 72.0000000
+Presolve removed 2 rows and 11838 columns (presolve time = 5s)...
+Presolve removed 11 rows and 12031 columns (presolve time = 10s)...
+Presolve removed 14 rows and 13035 columns (presolve time = 15s)...
+Presolve removed 14 rows and 13897 columns
+Presolve time: 19.10s
+Presolved: 186 rows, 373042 columns, 4753930 nonzeros
+Variable types: 0 continuous, 373042 integer (373042 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.860000e+02   0.000000e+00     20s
+
+Starting sifting (using dual simplex for sub-problems)...
+
+    Iter     Pivots    Primal Obj      Dual Obj        Time
+       0          0     infinity      0.0000000e+00     20s
+       1        206   1.0000000e+02   1.6666667e+01     20s
+       2        334   4.1000000e+01   2.1533333e+01     20s
+       3        487   2.9089286e+01   2.4413690e+01     20s
+
+Sifting complete
+
+     630    2.9062500e+01   0.000000e+00   0.000000e+00     20s
+
+Root relaxation: objective 2.906250e+01, 630 iterations, 0.41 seconds (0.29 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   29.06250    0   22   72.00000   29.06250  59.6%     -   20s
+H    0     0                      54.0000000   29.06250  46.2%     -   20s
+H    0     0                      31.0000000   29.06250  6.25%     -   21s
+     0     0   29.25000    0   21   31.00000   29.25000  5.65%     -   25s
+     0     0   29.25000    0   22   31.00000   29.25000  5.65%     -   49s
+     0     0   29.25000    0   19   31.00000   29.25000  5.65%     -   51s
+H    0     0                      30.0000000   29.25000  2.50%     -   52s
+     0     0   29.25000    0   19   30.00000   29.25000  2.50%     -   52s
+
+Cutting planes:
+  Zero half: 5
+
+Explored 1 nodes (2119 simplex iterations) in 52.40 seconds (38.76 work units)
+Thread count was 32 (of 72 available processors)
+
+Solution count 7: 30 31 31 ... 72
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.000000000000e+01, best bound 3.000000000000e+01, gap 0.0000%
+--------------------------------------------------------------------------------
+minTVR: 33
+IP: 30
+Ratio: 1.1
+--------------------------------------------------------------------------------
+IP runtime: 126.5
+-- Build Instance: 41.21
+-- Solve: 85.25
+minTVR runtime: 0.001367
+33 30 1.1 41.21 85.25 126.5 0.001367

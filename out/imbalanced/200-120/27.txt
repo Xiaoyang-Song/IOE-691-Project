@@ -1,0 +1,60 @@
+Instance:  main.py source/imbalanced/200/27.txt 120
+Number of Paths: 45
+Set parameter Username
+Set parameter LicenseID to value 2593664
+Academic license - for non-commercial use only - expires 2025-12-01
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Red Hat Enterprise Linux 8.8 (Ootpa)")
+
+CPU model: Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 36 physical cores, 72 logical processors, using up to 32 threads
+
+Optimize a model with 200 rows, 60762 columns and 831565 nonzeros
+Model fingerprint: 0x79fc34ca
+Variable types: 0 continuous, 60762 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 66.0000000
+Presolve removed 95 rows and 54934 columns
+Presolve time: 1.32s
+Presolved: 105 rows, 5828 columns, 48520 nonzeros
+Found heuristic solution: objective 65.0000000
+Variable types: 0 continuous, 5828 integer (5828 binary)
+Found heuristic solution: objective 64.0000000
+
+Root relaxation: objective 4.185714e+01, 318 iterations, 0.01 seconds (0.02 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   41.85714    0   29   64.00000   41.85714  34.6%     -    1s
+H    0     0                      47.0000000   41.85714  10.9%     -    1s
+H    0     0                      46.0000000   41.85714  9.01%     -    1s
+H    0     0                      45.0000000   41.85714  6.98%     -    1s
+H    0     0                      44.0000000   41.85714  4.87%     -    1s
+     0     0   42.64286    0   18   44.00000   42.64286  3.08%     -    1s
+     0     0   42.70000    0   17   44.00000   42.70000  2.95%     -    1s
+
+Cutting planes:
+  MIR: 8
+  Zero half: 9
+
+Explored 1 nodes (401 simplex iterations) in 1.85 seconds (1.49 work units)
+Thread count was 32 (of 72 available processors)
+
+Solution count 7: 44 45 46 ... 66
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.400000000000e+01, best bound 4.400000000000e+01, gap 0.0000%
+--------------------------------------------------------------------------------
+minTVR: 45
+IP: 44
+Ratio: 1.023
+--------------------------------------------------------------------------------
+IP runtime: 14.14
+-- Build Instance: 7.371
+-- Solve: 6.77
+minTVR runtime: 0.001425
+45 44 1.023 7.371 6.77 14.14 0.001425

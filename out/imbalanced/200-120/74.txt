@@ -1,0 +1,95 @@
+Instance:  main.py source/imbalanced/200/74.txt 120
+Number of Paths: 39
+Set parameter Username
+Set parameter LicenseID to value 2593664
+Academic license - for non-commercial use only - expires 2025-12-01
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Red Hat Enterprise Linux 8.8 (Ootpa)")
+
+CPU model: Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 36 physical cores, 72 logical processors, using up to 32 threads
+
+Optimize a model with 200 rows, 284369 columns and 4290945 nonzeros
+Model fingerprint: 0x4f662e26
+Variable types: 0 continuous, 284369 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 75.0000000
+Presolve removed 3 rows and 14545 columns (presolve time = 5s)...
+Presolve removed 9 rows and 14824 columns (presolve time = 10s)...
+Presolve removed 10 rows and 14865 columns
+Presolve time: 12.73s
+Presolved: 190 rows, 269504 columns, 3300843 nonzeros
+Variable types: 0 continuous, 269504 integer (269504 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.900000e+02   0.000000e+00     14s
+
+Starting sifting (using dual simplex for sub-problems)...
+
+    Iter     Pivots    Primal Obj      Dual Obj        Time
+       0          0     infinity      0.0000000e+00     14s
+       1        231   1.0000000e+02   1.6666667e+01     14s
+       2        360   4.8166667e+01   2.3016667e+01     14s
+       3        487   3.2166667e+01   2.6199275e+01     14s
+       4        592   3.1833333e+01   3.1833333e+01     14s
+
+Sifting complete
+
+     592    3.1833333e+01   0.000000e+00   0.000000e+00     14s
+
+Root relaxation: objective 3.183333e+01, 592 iterations, 0.32 seconds (0.23 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   31.83333    0   20   75.00000   31.83333  57.6%     -   14s
+H    0     0                      54.0000000   31.83333  41.0%     -   14s
+H    0     0                      34.0000000   31.83333  6.37%     -   14s
+     0     0   32.25000    0   28   34.00000   32.25000  5.15%     -   18s
+     0     0   32.31667    0   32   34.00000   32.31667  4.95%     -   29s
+     0     0   32.45455    0   36   34.00000   32.45455  4.55%     -   39s
+     0     0   32.45455    0   23   34.00000   32.45455  4.55%     -   61s
+     0     0   32.45455    0   23   34.00000   32.45455  4.55%     -   62s
+     0     0   32.45455    0   29   34.00000   32.45455  4.55%     -   62s
+     0     0   32.45455    0   29   34.00000   32.45455  4.55%     -   62s
+     0     0   32.56111    0   40   34.00000   32.56111  4.23%     -   62s
+     0     0   32.56111    0   42   34.00000   32.56111  4.23%     -   62s
+     0     0   32.57821    0   38   34.00000   32.57821  4.18%     -   62s
+     0     0   32.57821    0   21   34.00000   32.57821  4.18%     -   63s
+     0     0   32.57821    0   23   34.00000   32.57821  4.18%     -   63s
+     0     0   32.75000    0   16   34.00000   32.75000  3.68%     -   64s
+     0     0   33.00000    0    8   34.00000   33.00000  2.94%     -   64s
+     0     0   33.00000    0   18   34.00000   33.00000  2.94%     -   64s
+     0     0   33.00000    0   12   34.00000   33.00000  2.94%     -   65s
+     0     0   33.00000    0   20   34.00000   33.00000  2.94%     -   66s
+     0     0     cutoff    0        34.00000   34.00000  0.00%     -   66s
+
+Cutting planes:
+  Gomory: 5
+  Cover: 1
+  MIR: 4
+  Zero half: 3
+  RLT: 1
+
+Explored 1 nodes (1697 simplex iterations) in 68.18 seconds (21.75 work units)
+Thread count was 32 (of 72 available processors)
+
+Solution count 10: 34 34 34 ... 54
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.400000000000e+01, best bound 3.400000000000e+01, gap 0.0000%
+--------------------------------------------------------------------------------
+minTVR: 39
+IP: 34
+Ratio: 1.147
+--------------------------------------------------------------------------------
+IP runtime: 130.0
+-- Build Instance: 36.25
+-- Solve: 93.79
+minTVR runtime: 0.001574
+39 34 1.147 36.25 93.79 130.0 0.001574

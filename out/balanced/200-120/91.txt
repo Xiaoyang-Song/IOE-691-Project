@@ -1,0 +1,32 @@
+Instance:  main.py source/balanced/200/91.txt 120
+Number of Paths: 33
+Set parameter Username
+Set parameter LicenseID to value 2593664
+Academic license - for non-commercial use only - expires 2025-12-01
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Red Hat Enterprise Linux 8.8 (Ootpa)")
+
+CPU model: Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 36 physical cores, 72 logical processors, using up to 32 threads
+
+Optimize a model with 200 rows, 1423824 columns and 22614751 nonzeros
+Model fingerprint: 0x702fed5d
+Variable types: 0 continuous, 1423824 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 61.0000000
+Presolve removed 0 rows and 0 columns (presolve time = 5s)...
+Presolve removed 0 rows and 5451 columns (presolve time = 10s)...
+Presolve removed 3 rows and 42003 columns (presolve time = 15s)...
+Presolve removed 3 rows and 42343 columns (presolve time = 20s)...
+Presolve removed 3 rows and 42343 columns (presolve time = 26s)...
+Presolve removed 3 rows and 42343 columns (presolve time = 31s)...
+Presolve removed 5 rows and 42343 columns (presolve time = 35s)...
+Presolve removed 5 rows and 42405 columns (presolve time = 40s)...
+Presolve removed 5 rows and 42405 columns (presolve time = 45s)...
+Presolve removed 5 rows and 42405 columns
+Presolve time: 49.25s
+Presolved: 195 rows, 1381419 columns, 18115736 nonzeros
+Variable types: 0 continuous, 1381419 integer (1381419 binary)

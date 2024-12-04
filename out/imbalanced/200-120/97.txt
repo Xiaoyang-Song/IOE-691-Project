@@ -1,0 +1,90 @@
+Instance:  main.py source/imbalanced/200/97.txt 120
+Number of Paths: 34
+Set parameter Username
+Set parameter LicenseID to value 2593664
+Academic license - for non-commercial use only - expires 2025-12-01
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Red Hat Enterprise Linux 8.8 (Ootpa)")
+
+CPU model: Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 36 physical cores, 72 logical processors, using up to 32 threads
+
+Optimize a model with 200 rows, 507022 columns and 8057279 nonzeros
+Model fingerprint: 0xe9b936ba
+Variable types: 0 continuous, 507022 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 71.0000000
+Presolve removed 4 rows and 40239 columns (presolve time = 5s)...
+Presolve removed 4 rows and 45697 columns (presolve time = 10s)...
+Presolve removed 6 rows and 45847 columns (presolve time = 15s)...
+Presolve removed 6 rows and 45847 columns
+Presolve time: 17.55s
+Presolved: 194 rows, 461175 columns, 5661793 nonzeros
+Variable types: 0 continuous, 461175 integer (461175 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.940000e+02   0.000000e+00     19s
+
+Starting sifting (using dual simplex for sub-problems)...
+
+    Iter     Pivots    Primal Obj      Dual Obj        Time
+       0          0     infinity      0.0000000e+00     19s
+       1        271   1.0000000e+02   1.4285714e+01     19s
+       2        406   7.7500000e+01   2.2187500e+01     19s
+       3        567   3.6000000e+01   2.5954545e+01     19s
+       4        703   3.0250000e+01   2.8195652e+01     19s
+       5        817   3.0208333e+01   3.0208333e+01     19s
+
+Sifting complete
+
+     817    3.0208333e+01   0.000000e+00   0.000000e+00     19s
+
+Root relaxation: objective 3.020833e+01, 817 iterations, 0.54 seconds (0.46 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   30.20833    0   24   71.00000   30.20833  57.5%     -   19s
+H    0     0                      52.0000000   30.20833  41.9%     -   20s
+H    0     0                      34.0000000   30.20833  11.2%     -   20s
+H    0     0                      33.0000000   30.20833  8.46%     -   20s
+     0     0   30.50000    0   13   33.00000   30.50000  7.58%     -   27s
+H    0     0                      32.0000000   30.50000  4.69%     -   28s
+     0     0   30.55000    0   22   32.00000   30.55000  4.53%     -   31s
+     0     0   30.55000    0   22   32.00000   30.55000  4.53%     -   47s
+     0     0   30.55000    0   11   32.00000   30.55000  4.53%     -   48s
+     0     0   30.58333    0   25   32.00000   30.58333  4.43%     -   49s
+     0     0   30.58333    0   24   32.00000   30.58333  4.43%     -   50s
+     0     0   30.96667    0   25   32.00000   30.96667  3.23%     -   51s
+     0     0   30.96667    0   25   32.00000   30.96667  3.23%     -   51s
+     0     0   30.96667    0   27   32.00000   30.96667  3.23%     -   51s
+     0     0   30.96667    0   29   32.00000   30.96667  3.23%     -   51s
+     0     0 infeasible    0        32.00000   32.00000  0.00%     -   51s
+
+Cutting planes:
+  Clique: 1
+  MIR: 9
+  Zero half: 13
+
+Explored 1 nodes (1931 simplex iterations) in 52.49 seconds (29.60 work units)
+Thread count was 32 (of 72 available processors)
+
+Solution count 7: 32 32 33 ... 71
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.200000000000e+01, best bound 3.200000000000e+01, gap 0.0000%
+--------------------------------------------------------------------------------
+minTVR: 34
+IP: 32
+Ratio: 1.062
+--------------------------------------------------------------------------------
+IP runtime: 153.2
+-- Build Instance: 53.62
+-- Solve: 99.55
+minTVR runtime: 0.001563
+34 32 1.062 53.62 99.55 153.2 0.001563
